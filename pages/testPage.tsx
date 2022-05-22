@@ -24,7 +24,7 @@ const TestPage = () => {
     control,
     formState: { errors, isValid, isSubmitting },
   } = useForm<FormData>({
-    // resolver: zodResolver(validationSchema),
+    resolver: zodResolver(validationSchema),
     shouldUseNativeValidation: true, //show native error messages on the browser
     mode: "onChange", // show errors as you type
     defaultValues: {
@@ -41,7 +41,7 @@ const TestPage = () => {
   });
   return (
     <form
-      className="w-1/4 mx-auto p-10 border space-y-3 border-gray-200 rounded-xl bg-white"
+      className="w-1/4 mx-auto p-10 border space-y-3 border-gray-200 rounded-xl bg-white shadow-lg"
       onSubmit={handleSubmit((data) => {
         console.log(data);
       })}
