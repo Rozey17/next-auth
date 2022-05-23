@@ -55,6 +55,13 @@ a {
      border-color: #e4ff5e;
 }
 
+.section-1{
+  /* @apply relative h-screen bg-black */
+  position: relative;
+  height: 100vh;
+  background-color: #000000;
+}
+
 .section-2{
   /* @apply flex space-x-10*/
   display: flex;
@@ -370,7 +377,10 @@ color: rgb(229 231 235 ) ;
 }
 
 .svg{
-  @apply w-6 h-6 fill-current
+  /* @apply w-6 h-6 fill-current */
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
 }
 
 .footer{
