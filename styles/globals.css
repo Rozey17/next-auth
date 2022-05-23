@@ -16,7 +16,53 @@ a {
 }
 
 .input{
-  @apply w-full focus:outline-none border border-gray-400 p-1 bg-gray-100 focus:bg-white   text-sm focus:border-sky-400 focus:ring-2 focus:ring-sky-100
+  /* @apply flex items-center w-full h-full px-2 py-4 text-sm text-white capitalize bg-black border-2 border-r-0 border-white focus:outline-none */
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 16px 8px;
+    font-size:  14px ;
+    line-height:  20px;
+     color: rgb(255 255 255);
+       text-transform: capitalize;
+        background-color: rgb(0 0 0 );
+         border-width: 2px;
+          border-width: 2px;
+           border-color: rgb(255 255 255);
+            outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.button-3{
+  /* @apply text-[#e4ff5e] font-bold hover:text-black hover:bg-[#e4ff5e] text-sm uppercase p-3 transition duration-300 ease-in border-2 border-white focus:outline-none   hover:border-[#e4ff5e] */
+  color:#e4ff5e;
+   font-weight: 700;
+    font-size:  14px;
+    line-height:20px;
+      border-width: 2px;
+       border-color:rgb(255 255 255);
+         padding: 12px ;
+          outline: 2px solid transparent;
+    outline-offset: 2px;
+      text-transform: uppercase;
+}
+
+.button-3:hover{
+  color: black;
+  background-color: #e4ff5e;
+    transition-duration: 300ms;
+     border-color: #e4ff5e;
+}
+
+.section-2{
+  /* @apply flex */
+  display: flex;
+}
+
+.section-2 p{
+  /* @apply text-gray-200 */
+  color:rgb(229 231 235);
 }
 
 .button-1{
@@ -87,15 +133,47 @@ a {
 }
 
 .classes-grid {
-  @apply grid grid-cols-3 gap-10
+  /* @apply grid grid-cols-3 gap-10 */
+  display: grid;
+   grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 40px;
+}
+
+.classes-grid p{
+  /* @apply text-white */
+  color: white;
 }
 
 .sessions {
-  @apply flex items-center justify-between text-white h-60
+  /* @apply flex items-center justify-between text-white h-60 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    height: 15rem/* 240px */;
+    color: white;
+}
+
+
+.sessions span{
+  /* @apply text-lg text-gray-200 */
+   font-size:  18px ;
+    line-height: 28px ;
+    color:rgb(229 231 235 )
 }
 
 .title{
-  @apply text-xl font-bold hover:text-[#e4ff5e] uppercase duration-300 ease-in transition text-white
+  /* @apply text-xl font-bold hover:text-[#e4ff5e] uppercase duration-300 ease-in transition text-white */
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px ;
+    line-height: 28px ;
+}
+
+.title:hover{
+  color: #e4ff5e;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 .image{
@@ -107,7 +185,6 @@ a {
   align-items: center;
   justify-content: center;
   padding: 16px 24px;
-  
  gap:12px;
     font-size: 14px;
     font-weight: 700;
@@ -166,8 +243,11 @@ a {
   font-weight: 700;
  color: rgb(55 65 81 / var(--tw-text-opacity));
  text-transform: uppercase;
+}
 
-
+.info-item p{
+  /* @apply text-gray-500 */
+  color:rgb(107 114 128 );
 }
 
 .offer-item{
@@ -186,13 +266,72 @@ a {
   font-weight: 700;
   color: white;
   text-transform: uppercase;
+}
 
+.offer-item h1{
+  /* @apply text-[#e4ff5e] font-bold text-3xl */
+  color: #e4ff5e;
+  font-weight: 700;
+  font-size: 30px ;
+    line-height:  36px ;
+
+}
+
+.social-media-icons{
+  /* @apply flex gap-5 text-white */
+  display: flex;
+  color: white;
+  gap: 20px;
 
 }
 
 
+
+.divide-y > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-y-reverse: 0;
+    border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+    border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+}
+
+.divide-gray-400 > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-opacity: 1;
+    border-color: rgb(156 163 175 / var(--tw-divide-opacity));
+}
+
+.space-y-10 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-5 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+
+
 .offer-item p{
-  /* @apply text-gray-200 */
+  /* @apply text-gray-200*/
 margin-top: 20px;
 color: rgb(229 231 235 ) ;
 }
@@ -233,13 +372,26 @@ color: rgb(229 231 235 ) ;
   @apply w-6 h-6 fill-current
 }
 
+.footer{
+  /* @apply px-10 py-20 bg-black */
+  padding: 80px 40px;
+  background-color: black;
+
+}
+
 .footer-grid{
   /* @apply grid items-center justify-between grid-cols-4 */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
    align-items: center;
   justify-content: space-between;
+}
 
+.footer-grid li{
+  /* @apply text-sm text-gray-200 */
+   font-size: 14px ;
+    line-height:  20px ;
+  color: rgb(229 231 235 );
 }
 @tailwind base;
 @tailwind components;

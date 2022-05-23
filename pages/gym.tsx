@@ -105,6 +105,9 @@ const GymPage = () => {
           </div>
         </div>
       </section>
+
+      {/* section 'votre club de gym' */}
+
       <section
         style={{
           color: "white",
@@ -113,15 +116,15 @@ const GymPage = () => {
         }}
         // className="p-20 text-white bg-black "
       >
-        <div className="flex">
+        <div className="section-2">
           <div style={{ width: "33.333333%" }} className="space-y-5 ">
             <h1
               style={{ width: "66.666667%", textAlign: "start" }}
-              className=" section-title"
+              className="section-title"
             >
               votre club de gym
             </h1>
-            <p className="text-gray-100">
+            <p className="">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Doloremque nam debitis officia. Architecto eos quae ad accusantium
               debitis officia magnam cumque nobis suscipit fuga recusandae, vel
@@ -142,6 +145,9 @@ const GymPage = () => {
           </div>
         </div>
       </section>
+
+      {/* section séances */}
+
       <section
         style={{
           padding: "80px",
@@ -150,7 +156,7 @@ const GymPage = () => {
       >
         <div className="sessions ">
           <h1 className="section-title">séances</h1>
-          <span className="text-lg text-gray-200">
+          <span className="">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta,
             quo?
           </span>
@@ -173,19 +179,17 @@ const GymPage = () => {
               <img
                 src="/images/pexels-photo-917653.jpeg"
                 alt=""
-                className="object-cover object-center w-full h-full"
+                className="image"
               />
             </div>
             <a href="#" className="title ">
               yoga
             </a>
-            <p className="text-white">
+            <p className="">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ad
               mollitia. Ad facere ipsam rerum?
             </p>
-            <button className="border-2 border-[#e4ff5e] hover:text-[#e4ff5e] text-gray-800 font-bold px-4 py-2 justify-center transition duration-300 ease-in flex items-center text-xs uppercase bg-[#e4ff5e] hover:bg-black">
-              voir plus
-            </button>
+            <button className="button-2">voir plus</button>
           </div>
           <div className="space-y-5">
             <div
@@ -196,19 +200,17 @@ const GymPage = () => {
               <img
                 src="/images/pexels-photo-4804257.jpeg"
                 alt=""
-                className="object-cover object-center w-full h-full"
+                className="image"
               />
             </div>
             <a href="#" className="title ">
               boxe
             </a>
-            <p className="text-white">
+            <p className="">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ad
               mollitia. Ad facere ipsam rerum?
             </p>
-            <button className="border-2 border-[#e4ff5e] hover:text-[#e4ff5e] text-gray-800 font-bold px-4 py-2 justify-center transition duration-300 ease-in flex items-center text-xs uppercase bg-[#e4ff5e] hover:bg-black">
-              voir plus
-            </button>
+            <button className="button-2">voir plus</button>
           </div>
 
           <div className="space-y-5">
@@ -220,23 +222,24 @@ const GymPage = () => {
               <img
                 src="/images/pexels-photo-9288101.jpeg"
                 alt=""
-                className="object-cover object-center w-full h-full"
+                className="image"
               />
             </div>
             <a href="#" className="title ">
               stretching
             </a>
-            <p className="text-white">
+            <p className="">
               {" "}
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ad
               mollitia. Ad facere ipsam rerum?
             </p>
-            <button className="border-2 border-[#e4ff5e] hover:text-[#e4ff5e] text-gray-800 font-bold px-4 py-2 justify-center transition duration-300 ease-in flex items-center text-xs uppercase bg-[#e4ff5e] hover:bg-black">
-              voir plus
-            </button>
+            <button className="button-2">voir plus</button>
           </div>
         </div>
       </section>
+
+      {/* section info */}
+
       <section
         style={{
           padding: "80px",
@@ -261,7 +264,7 @@ const GymPage = () => {
                   molestias?
                 </p>
               </div>
-              <h1 className="text-[#e4ff5e] font-bold text-3xl">439€</h1>
+              <h1 className="">439€</h1>
             </div>
             <div className="offer-item">
               <div className="offer-item-left">
@@ -276,7 +279,7 @@ const GymPage = () => {
                   molestias?
                 </p>
               </div>
-              <h1 className="text-[#e4ff5e] font-bold text-3xl">169€</h1>
+              <h1 className="">169€</h1>
             </div>
             <div className="offer-item">
               <div className="offer-item-left">
@@ -291,7 +294,7 @@ const GymPage = () => {
                   molestias?
                 </p>
               </div>
-              <h1 className="text-[#e4ff5e] font-bold text-3xl">29€</h1>
+              <h1 className="">29€</h1>
             </div>
           </div>
         </div>
@@ -301,7 +304,7 @@ const GymPage = () => {
         // className="p-20 bg-gray-100"
       >
         <div className="info-session">
-          <div className="info-item">
+          <div className="space-y-3 info-item ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -324,9 +327,9 @@ const GymPage = () => {
             </svg>
             <h1 className="">contact</h1>
             <p>Tel: 0102040560</p>
-            email@email.com
+            <p>email@email.com</p>
           </div>
-          <div className="info-item">
+          <div className="space-y-3 info-item ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -354,13 +357,13 @@ const GymPage = () => {
               </g>
             </svg>
             <h1 className="">Horaires</h1>
-            <span className="">
+            <span className="space-y-2">
               <p>Lundi à vendredi: 7:30 — 1:00</p>
               <p>Samedi: 9:00 — 1:00</p>
               <p>Dimanche: 9:00 — 23:30</p>
             </span>
           </div>
-          <div className="info-item">
+          <div className="space-y-3 info-item ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -394,11 +397,11 @@ const GymPage = () => {
             </svg>
             <h1 className="">adresse</h1>
             <p>10 rue Henry René</p>
-            45100, Orléans
+            <p>45100, Orléans</p>
           </div>
         </div>
       </section>
-      <footer className="px-10 py-20 bg-black">
+      <footer className="footer">
         <div className="footer-grid">
           <div className="space-y-5">
             <div className="logo">
@@ -408,7 +411,7 @@ const GymPage = () => {
                 className="object-cover object-center w-full h-full"
               /> */}
             </div>
-            <div className="flex gap-5 text-white">
+            <div className="social-media-icons">
               <a href="#">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -522,34 +525,34 @@ const GymPage = () => {
           </div>
           <div className="">
             <ul className="space-y-3">
-              <li className="text-sm text-gray-200 title">
+              <li className=" title">
                 <a href="#">cours</a>
               </li>
               <a href="#"></a>
-              <li className="text-sm text-gray-200 title">
+              <li className=" title">
                 <a href="#">agenda</a>
               </li>
-              <li className="text-sm text-gray-200 title">
+              <li className=" title">
                 <a href="#">coaches</a>
               </li>
-              <li className="text-sm text-gray-200 title">
+              <li className=" title">
                 <a href="#">débutants</a>
               </li>
             </ul>
           </div>
           <div className="">
             <ul className="space-y-3">
-              <li className="text-sm text-gray-200 title">
+              <li className=" title">
                 <a href="#">entrainement personnel</a>
               </li>
               <a href="#"></a>
-              <li className="text-sm text-gray-200 title">
+              <li className=" title">
                 <a href="#">boutique</a>
               </li>
-              <li className="text-sm text-gray-200 title">
+              <li className=" title">
                 <a href="#">à propos de nous</a>
               </li>
-              <li className="text-sm text-gray-200 title">
+              <li className=" title">
                 <a href="#">contact</a>
               </li>
             </ul>
@@ -557,15 +560,13 @@ const GymPage = () => {
           <div className="space-y-4">
             <h1 className="title">avec nous pas de secret</h1>
             <p className="text-white">{`Inscrivez vous pour plus d'info`}</p>
-            <div className="flex border border-transparent">
+            <div className="flex ">
               <input
                 type="text"
-                className="flex items-center w-full h-full px-2 py-4 text-sm text-white capitalize bg-black border-2 border-r-0 border-white focus:outline-none"
+                className="input"
                 placeholder="entrer votre email"
               />
-              <button className="text-[#e4ff5e] font-bold hover:text-black hover:bg-[#e4ff5e] text-sm uppercase p-3 transition duration-300 ease-in border-2 border-white focus:outline-none   hover:border-[#e4ff5e]">
-                inscription
-              </button>
+              <button className="button-3">inscription</button>
             </div>
           </div>
         </div>
