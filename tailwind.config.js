@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -13,19 +15,32 @@ module.exports = {
     // }),
     extend: {
       keyframes: {
-        ripple: {
+        scroll: {
           "0%": {
-            transform: "scale(1)",
-            opacity: 0,
+            marginLeft: "0%",
           },
-          // "100%": {
-          //   opacity: 0,
-          // },
+          "100%": {
+            marginLeft: "-100%",
+          },
+        },
+        scroll2: {
+          "0%": {
+            marginLeft: "100%",
+          },
+          "100%": {
+            marginLeft: "0%",
+          },
         },
       },
       animation: {
-        ripple: "ripple 600ms linear",
+        scroller: "scroll 10s infinite linear",
       },
+      fontFamily: {
+        sans: ["Poppins", ...defaultTheme.fontFamily.sans],
+      },
+      // animation: {
+      //   scroller2: "scroll2 10s infinite linear",
+      // },
       // animation: {
       //   "spin-slow": "spin 3s linear infinite",
       // },

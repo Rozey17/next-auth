@@ -64,21 +64,13 @@ const GymPage = () => {
                   ))}
                 </ul>
                 <button className="button-1">devenir membre</button>
-                <button className="border-2 text- border-[#e4ff5e] text-[#e4ff5e] hover:text-gray-700 font-bold px-4 py-2 justify-center transition duration-300 ease-in flex items-center text-xs uppercase bg-transparent hover:bg-[#e4ff5e]">
-                  réserver session
-                </button>
+                <button className="button-1">réserver session</button>
               </div>
             </nav>
-            <div style={{ width: "160px", textAlign: "start" }}>
+            <div className="w-20">
               <h1 className="section-title">retrouver la forme avec nous</h1>
             </div>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-              }}
-            >
+            <div className="flex items-center justify-between">
               <button className="p-6 button-2">accès cours gratuit</button>
               <button className="playlist-button">
                 <svg
@@ -108,22 +100,21 @@ const GymPage = () => {
 
       {/* section 'votre club de gym' */}
 
-      <section
-        style={{
-          color: "white",
-          padding: "80px",
-          backgroundColor: "black",
-        }}
-        // className="p-20 text-white bg-black "
-      >
+      <section className="p-20 text-white bg-black ">
+        {/* <div className="flex animate-scroller whitespace-nowrap after:scroll2 10s infinite linear">
+          {["text1", "text-2", "text-3", "text-4", "text-5"].map(
+            (item, index) => (
+              <div key={index} className="text-center">
+                <h1 className="text-[#e4ff5e] text-7xl font-extrabold ">
+                  {item}
+                </h1>
+              </div>
+            )
+          )}
+        </div> */}
         <div className="section-2">
-          <div style={{ width: "33.333333%" }} className="space-y-5 ">
-            <h1
-              style={{ width: "66.666667%", textAlign: "start" }}
-              className="section-title"
-            >
-              votre club de gym
-            </h1>
+          <div className="w-1/3 space-y-5 ">
+            <h1 className=" section-title">votre club de gym</h1>
             <p className="">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Doloremque nam debitis officia. Architecto eos quae ad accusantium
@@ -148,12 +139,7 @@ const GymPage = () => {
 
       {/* section séances */}
 
-      <section
-        style={{
-          padding: "80px",
-          backgroundColor: "black",
-        }}
-      >
+      <section className="p-20 bg-black ">
         <div className="sessions ">
           <h1 className="section-title">séances</h1>
           <span className="">
@@ -238,67 +224,79 @@ const GymPage = () => {
         </div>
       </section>
 
-      {/* section info */}
-
-      <section
-        style={{
-          padding: "80px",
-          backgroundColor: "black",
-        }}
-      >
-        <div className="space-y-10">
-          <h1 style={{ textAlign: "center" }} className="section-title">
-            choisissez votre offre
+      <section className="relative h-[1100px]  bg-black ">
+        <div className="h-full leading-none py-52">
+          <h1 className="font-extrabold text-gray-600 uppercase opacity-20 text-[250px]">
+            rejoignez
           </h1>
-          <div className="divide-y divide-gray-400">
-            <div className="offer-item">
-              <div className="offer-item-left ">
-                <a href="#" className="">
-                  3 mois
-                </a>
-                <p className="">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Veritatis incidunt voluptatibus saepe aperiam error fugit
-                  voluptate aspernatur possimus ad dignissimos beatae voluptatum
-                  alias unde reprehenderit, eius perferendis odio consequatur
-                  molestias?
-                </p>
+          <h1 className="font-extrabold text-gray-600 uppercase opacity-20 text-[250px]">
+            nous
+          </h1>
+        </div>
+        <div className="absolute inset-0">
+          <div className="relative min-h-screen p-20 space-y-20 ">
+            <h1 className="text-center section-title">
+              choisissez votre offre
+            </h1>
+            <div className="divide-y divide-gray-700">
+              <div className="offer-item group">
+                <div className="offer-item-left ">
+                  <a href="#" className="group-hover:text-[#e4ff5e] ">
+                    3 mois
+                  </a>
+                  <p className="">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Veritatis incidunt voluptatibus saepe aperiam error fugit
+                    voluptate aspernatur possimus ad dignissimos beatae
+                    voluptatum alias unde reprehenderit, eius perferendis odio
+                    consequatur molestias?
+                  </p>
+                </div>
+                <h1 className="">439€</h1>
               </div>
-              <h1 className="">439€</h1>
+              <div className="offer-item group">
+                <div className="offer-item-left ">
+                  <a href="#" className="group-hover:text-[#e4ff5e] ">
+                    10 séances
+                  </a>
+                  <p className="">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Veritatis incidunt voluptatibus saepe aperiam error fugit
+                    voluptate aspernatur possimus ad dignissimos beatae
+                    voluptatum alias unde reprehenderit, eius perferendis odio
+                    consequatur molestias?
+                  </p>
+                </div>
+                <div className="flex items-center justify-center w-40 h-10 p-4 text-xs font-bold uppercase bg-gradient-to-r from-green-500 to-lime-400 transforme -rotate-12">
+                  la plus populaire
+                </div>
+                <h1 className="">169€</h1>
+              </div>
+              <div className="offer-item group">
+                <div className="offer-item-left">
+                  <a href="#" className="group-hover:text-[#e4ff5e] ">
+                    séance découverte
+                  </a>
+                  <p className="">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Veritatis incidunt voluptatibus saepe aperiam error fugit
+                    voluptate aspernatur possimus ad dignissimos beatae
+                    voluptatum alias unde reprehenderit, eius perferendis odio
+                    consequatur molestias?
+                  </p>
+                </div>
+                <h1 className="">29€</h1>
+              </div>
             </div>
-            <div className="offer-item">
-              <div className="offer-item-left">
-                <a href="#" className="">
-                  10 séances
-                </a>
-                <p className="">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Veritatis incidunt voluptatibus saepe aperiam error fugit
-                  voluptate aspernatur possimus ad dignissimos beatae voluptatum
-                  alias unde reprehenderit, eius perferendis odio consequatur
-                  molestias?
-                </p>
-              </div>
-              <h1 className="">169€</h1>
-            </div>
-            <div className="offer-item">
-              <div className="offer-item-left">
-                <a href="#" className="">
-                  séance découverte
-                </a>
-                <p className="">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Veritatis incidunt voluptatibus saepe aperiam error fugit
-                  voluptate aspernatur possimus ad dignissimos beatae voluptatum
-                  alias unde reprehenderit, eius perferendis odio consequatur
-                  molestias?
-                </p>
-              </div>
-              <h1 className="">29€</h1>
+            <div className="text-center">
+              <button className="p-6 button-2">view all</button>
             </div>
           </div>
         </div>
       </section>
+
+      {/* section info */}
+
       <section
         style={{ padding: "80px", backgroundColor: "rgb(243 244 246)" }}
         // className="p-20 bg-gray-100"

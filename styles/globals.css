@@ -16,394 +16,189 @@ a {
 }
 
 .input{
-  /* @apply flex items-center w-full h-full px-2 py-4 text-sm text-white capitalize bg-black border-2 border-r-0 border-white focus:outline-none */
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  padding: 16px 8px;
-    font-size:  14px ;
-    line-height:  20px;
-     color: rgb(255 255 255);
-       text-transform: capitalize;
-        background-color: rgb(0 0 0 );
-         border-width: 2px;
-          border-width: 2px;
-           border-color: rgb(255 255 255);
-            outline: 2px solid transparent;
-    outline-offset: 2px;
+  @apply flex items-center w-full h-full px-2 py-4 text-sm text-white capitalize bg-black border-2 border-r-0 border-white focus:outline-none
+ 
 }
 
 .button-3{
-  /* @apply text-[#e4ff5e] font-bold hover:text-black hover:bg-[#e4ff5e] text-sm uppercase p-3 transition duration-300 ease-in border-2 border-white focus:outline-none   hover:border-[#e4ff5e] */
-  color:#e4ff5e;
-   font-weight: 700;
-    font-size:  14px;
-    line-height:20px;
-      border-width: 2px;
-       border-color:rgb(255 255 255);
-         padding: 12px ;
-          outline: 2px solid transparent;
-    outline-offset: 2px;
-      text-transform: uppercase;
+  @apply text-[#dae727] font-bold hover:text-black hover:bg-[#dae727] text-sm uppercase p-3 transition duration-300 ease-in border-2 border-white focus:outline-none   hover:border-[#dae727]
+  
 }
 
-.button-3:hover{
-  color: black;
-  background-color: #e4ff5e;
-    transition-duration: 300ms;
-     border-color: #e4ff5e;
-}
 
 .section-1{
-  /* @apply relative h-screen bg-black */
-  position: relative;
-  height: 100vh;
-  background-color: #000000;
+  @apply relative h-screen bg-black
+ 
 }
 
 .section-2{
-  /* @apply flex space-x-10*/
-  display: flex;
-  gap: 40px;
+  @apply flex space-x-10
+ 
 }
 
 .section-2 p{
-  /* @apply text-gray-200 */
-  color:rgb(229 231 235);
+  @apply text-gray-200
+
 }
 
 .button-1{
-  /* @apply border-2 border-[#e4ff5e] text-[#e4ff5e] hover:text-gray-700 font-bold px-4 py-2 justify-center transition duration-300 ease-in items-center text-xs uppercase bg-transparent hover:bg-[#e4ff5e] */
-   display: flex;
-  border-width: 2px;
-    border-color: #e4ff5e;
-    color: #e4ff5e;
-    font-weight: 700;
-    padding: 8px 16px;
-    text-align: center;
-     justify-content: center;
-      text-transform: uppercase;
-       /* background-color: transparent; */
-       font-size: 12px ;
-    line-height: 16px ;
+  @apply border-2 border-[#dae727] text-[#dae727] hover:text-gray-700 font-bold px-4 py-2 justify-center transition duration-300 ease-in items-center text-xs uppercase bg-transparent hover:bg-[#dae727]
+ 
     
-}
-
-.button-1:hover{
-  color: black;
-  background-color: #e4ff5e;
-   transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 
 .button-2{
-  /* @apply border-2 border-[#e4ff5e] hover:text-[#e4ff5e] text-black font-bold px-4 py-2 justify-center  transition duration-300 ease-in items-center text-xs uppercase bg-[#e4ff5e] hover:bg-black */
-   display: flex;
-  border-width: 2px;
-    border-color: #e4ff5e;
-    color: black;
-    font-weight: 700;
-    padding: 8px 16px;
-    text-align: center;
-     justify-content: center;
-      text-transform: uppercase;
-       background-color: #e4ff5e;
-       font-size: 12px ;
-    line-height: 16px ;
-}
-
-.button-2:hover {
-  color: #e4ff5e;
-  background-color: black;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  @apply border-2 border-[#dae727] hover:text-[#dae727] text-black font-bold px-4 py-2 justify-center  transition duration-300 ease-in items-center text-xs uppercase bg-[#dae727] hover:bg-black
   
 }
 
 .navbar-items{
-  /* @apply text-white text-xs font-bold hover:text-[#e4ff5e] transition duration-300 ease-in uppercase */
-  color: white;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 12px;
-  line-height: 16px;
+  @apply text-white text-xs font-bold hover:text-[#dae727] transition duration-300 ease-in uppercase
+  
 
 }
 
-.navbar-items a:hover{
-  color: #e4ff5e;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
-  
-  
-}
 
 .classes-grid {
-  /* @apply grid grid-cols-3 gap-10 */
-  display: grid;
-   grid-template-columns: repeat(3, minmax(0, 1fr));
-  grid-gap: 40px;
+  @apply grid grid-cols-3 gap-10
+
 }
 
 .classes-grid p{
-  /* @apply text-white */
-  color: white;
+  @apply text-white
+ 
 }
 
 .sessions {
-  /* @apply flex items-center justify-between text-white h-60 */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-    height: 15rem/* 240px */;
-    color: white;
+  @apply flex items-center justify-between text-white h-60
+ 
 }
 
 
 .sessions span{
-  /* @apply text-lg text-gray-200 */
-   font-size:  18px ;
-    line-height: 28px ;
-    color:rgb(229 231 235 )
+  @apply text-lg text-gray-200
+   
 }
 
 .title{
-  /* @apply text-xl font-bold hover:text-[#e4ff5e] uppercase duration-300 ease-in transition text-white */
-  color: white;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 20px ;
-    line-height: 28px ;
-}
-
-.title:hover{
-  color: #e4ff5e;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  @apply text-xl font-bold hover:text-[#dae727] uppercase duration-300 ease-in transition text-white
+ 
 }
 
 .image{
   @apply object-cover object-center w-full h-full mb-3
 }
+
 .playlist-button{
-  /* @apply flex items-center justify-center px-6 py-4 space-x-3 text-sm font-bold text-white uppercase hover:text-[#e4ff5e] transition duration-300 ease-in bg-black rounded-full */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px 24px;
- gap:12px;
-    font-size: 14px;
-    font-weight: 700;
-    color: white;
-    text-transform: uppercase;
-    border-radius: 9999px;
-       transition: '0.3s ease-in';
-
-    background-color: black;
-}
-
-
-.playlist-button:hover{
-  color: #e4ff5e;
-    transition-duration: 300ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  @apply flex items-center justify-center px-6 py-4 space-x-3 text-sm font-bold text-white uppercase hover:text-[#dae727] transition duration-300 ease-in bg-black rounded-full
 
 }
 
 .section-title{
-  /* @apply font-extrabold text-center text-white uppercase text-7xl */
-  font-weight: 800;
-  /* text-align: center; */
-  color: white;
-  text-transform: uppercase;
-  font-size: 72px;
-  line-height: 1;
+  @apply font-extrabold text-white uppercase text-7xl
+ 
 }
 
 
 .info-session{
-  /* @apply flex justify-between w-2/3 mx-auto align-top */
+  @apply flex justify-between w-2/3 mx-auto align-top
 
-  display: flex;
-  justify-content: space-between;
-  width: 66.666667%;
-   margin-left: auto;
-    margin-right: auto;
-    vertical-align: top;
+
 }
 
 .info-item{
-  /* @apply flex flex-col items-center space-y-3 */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
-}
-
-.info-item h1{
-  /* @apply text-2xl font-bold text-gray-700 uppercase */
-   font-size: 1.5rem/* 24px */;
-    line-height: 2rem/* 32px */;
-  font-weight: 700;
- color: rgb(55 65 81 / var(--tw-text-opacity));
- text-transform: uppercase;
-}
-
-.info-item p{
-  /* @apply text-gray-500 */
-  color:rgb(107 114 128 );
-}
-
-.offer-item{
-  /* @apply flex items-center justify-between p-10 transition duration-300 ease-in group hover:bg-gray-800 */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 40px;
+  @apply flex flex-col items-center space-y-3 
   
 }
 
+.info-item h1{
+  @apply text-2xl font-bold text-gray-700 uppercase
+   
+}
+
+.info-item p{
+  @apply text-gray-500
+ 
+}
+
+.offer-item{
+  @apply flex items-center justify-between py-10 transition duration-300 ease-in hover:bg-neutral-800 
+}
+
+
+
 .offer-item a{
-  /* @apply text-2xl font-bold group-hover:text-[#e4ff5e] uppercase duration-300 ease-in transition text-white */
-  font-size: 1.5rem/* 24px */;
-    line-height: 2rem/* 32px */;
-  font-weight: 700;
-  color: white;
-  text-transform: uppercase;
+  @apply text-2xl font-bold  uppercase duration-300 ease-in transition text-white
+ 
 }
 
 .offer-item h1{
-  /* @apply text-[#e4ff5e] font-bold text-3xl */
-  color: #e4ff5e;
-  font-weight: 700;
-  font-size: 30px ;
-    line-height:  36px ;
+  @apply text-[#dae727] font-bold text-3xl
+ 
 
 }
 
 .social-media-icons{
-  /* @apply flex gap-5 text-white */
-  display: flex;
-  color: white;
-  gap: 20px;
+  @apply flex gap-5 text-white
 
 }
-
-
-
-.divide-y > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-y-reverse: 0;
-    border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
-    border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
-}
-
-.divide-gray-400 > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgb(156 163 175 / var(--tw-divide-opacity));
-}
-
-.space-y-10 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
-}
-
-.space-y-5 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
-}
-
-.space-y-4 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-}
-
-.space-y-3 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
-}
-
-.space-y-2 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
-}
-
-
 
 .offer-item p{
-  /* @apply text-gray-200*/
-margin-top: 20px;
-color: rgb(229 231 235 ) ;
-}
-.offer-item-left{
-  /* @apply w-1/2 space-y-5 */
-  width: 50%;
- 
+  @apply text-gray-200
 
 }
-.offer-item:hover{
-  background-color: rgb(31 41 55);
-  /* opacity: 0.8; */
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+.offer-item-left{
+  @apply w-1/2 space-y-5
 }
+
 
 .hero{
   @apply px-16 py-10 space-y-20
 }
 .logo{
-  /* @apply w-16 h-16 bg-white rounded-full */
-  width: 64px;
-  height: 64px;
-  background-color: white;
-  border-radius: 100%;
+  @apply w-16 h-16 bg-white rounded-full
+  
 }
 
 .section-2-grids{
-  /* @apply grid w-2/3 grid-cols-2 gap-x-10 gap-y-44 */
-  display: grid;
-   width: 66.666667%;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap:  40px ;
-     row-gap:  176px ;
+  @apply grid w-2/3 grid-cols-2 gap-x-10 gap-y-44
+  
 }
 
 .svg{
-  /* @apply w-6 h-6 fill-current */
-  width: 24px;
-  height: 24px;
-  fill: currentColor;
+  @apply w-6 h-6 fill-current
+ 
 }
 
 .footer{
-  /* @apply px-10 py-20 bg-black */
-  padding: 80px 40px;
-  background-color: black;
+  @apply px-10 py-20 bg-black
+  
 
 }
 
 .footer-grid{
-  /* @apply grid items-center justify-between grid-cols-4 */
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-   align-items: center;
-  justify-content: space-between;
+  @apply grid items-center justify-between grid-cols-4
+  
 }
 
 .footer-grid li{
-  /* @apply text-sm text-gray-200 */
-   font-size: 14px ;
-    line-height:  20px ;
-  color: rgb(229 231 235 );
+  @apply text-sm text-gray-200}
+ 
+ .scroller {
+                  animation: scroll 10s infinite linear;
+                }
+               
+               @keyframes scroll {
+  0% { margin-left: 0; }
+  100% { margin-left: -100%; }
 }
+ 
+@keyframes scroll2 {
+  0% { margin-left: 100%; }
+  100% { margin-left: 0%; }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
