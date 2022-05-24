@@ -13,6 +13,10 @@ module.exports = {
 
     //   darken: 0.0,
     // }),
+    fontFamily: {
+      sans: ["Roboto", ...defaultTheme.fontFamily.sans],
+      // sans: ["Poppins", "sans-serif"],
+    },
     extend: {
       keyframes: {
         scroll: {
@@ -35,9 +39,7 @@ module.exports = {
       animation: {
         scroller: "scroll 10s infinite linear",
       },
-      fontFamily: {
-        sans: ["Poppins", ...defaultTheme.fontFamily.sans],
-      },
+
       // animation: {
       //   scroller2: "scroll2 10s infinite linear",
       // },

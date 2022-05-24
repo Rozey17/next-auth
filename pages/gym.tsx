@@ -1,4 +1,5 @@
 import React from "react";
+import Slider from "react-slick";
 
 const data = [
   {
@@ -28,22 +29,34 @@ const data = [
 ];
 
 const GymPage = () => {
+  const settings = {
+    // dots: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    autoplay: true,
+    speed: 5000,
+    arrows: false,
+    autoplaySpeed: 3000,
+    cssEase: "linear",
+  };
   return (
     <>
       <section className="relative h-screen bg-black">
         <img
           src="/images/pexels-photo-841130.jpeg"
           alt=""
-          className="image"
-          style={{
-            opacity: 0.7,
-          }}
+          className="image opacity-80"
         />
         <div className="absolute inset-0">
           <div className="hero">
             <nav className="flex items-center justify-between">
-              <div className="logo">
-                {/* <img src="" alt="" className="" /> */}
+              <div className="logo ">
+                <img
+                  src="https://www.pngkey.com/png/detail/239-2393323_golds-gym-logo-golds-gym-white-logo.png"
+                  alt=""
+                  className="image"
+                />
               </div>
               <div className="flex items-center space-x-5">
                 <ul className="flex items-center gap-5">
@@ -100,39 +113,65 @@ const GymPage = () => {
 
       {/* section 'votre club de gym' */}
 
-      <section className="p-20 text-white bg-black ">
-        {/* <div className="flex animate-scroller whitespace-nowrap after:scroll2 10s infinite linear">
-          {["text1", "text-2", "text-3", "text-4", "text-5"].map(
-            (item, index) => (
-              <div key={index} className="text-center">
-                <h1 className="text-[#e4ff5e] text-7xl font-extrabold ">
-                  {item}
-                </h1>
-              </div>
-            )
-          )}
-        </div> */}
-        <div className="section-2">
-          <div className="w-1/3 space-y-5 ">
-            <h1 className=" section-title">votre club de gym</h1>
-            <p className="">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Doloremque nam debitis officia. Architecto eos quae ad accusantium
-              debitis officia magnam cumque nobis suscipit fuga recusandae, vel
-              fugiat voluptatum illo deserunt.
-            </p>
+      <section className="relative text-white bg-black ">
+        <div className="w-[55%] leading-none pt-96">
+          <div className="text-[350px] font-extrabold text-gray-500 opacity-20 uppercase">
+            én
           </div>
-          <div className="section-2-grids">
-            {data.map((item, index) => (
-              <div key={index} className="space-y-3">
-                <img src={item.image} alt="" className="image " />
-                <a href="#" className="title">
-                  {item.title}
-                </a>
-                <p className="">{item.description}</p>
-                <button className="button-2">voir plus</button>
-              </div>
-            ))}
+          <div className="flex text-[350px] font-extrabold text-gray-500 opacity-20 justify-center uppercase">
+            er
+          </div>
+          <div className="flex text-[350px] font-extrabold text-gray-500 opacity-20 justify-end uppercase">
+            gie
+          </div>
+        </div>
+        {/* <Slider {...settings}>
+          {[
+            "text-1",
+            "text-1",
+            "text-1",
+            "text-1",
+            "text-1",
+            "text-1",
+            "text-1",
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="py-5 font-extrabold uppercase text-7xl text-lime-300 whitespace-nowrap"
+            >
+              {item}
+            </div>
+          ))}
+        </Slider> */}
+
+        {/* </div> */}
+        <div className="absolute inset-0">
+          <div className="relative p-20 section-2">
+            <div className="w-1/3 space-y-5 ">
+              <h1 className="w-40 leading-tight section-title">
+                votre club de gym
+              </h1>
+              <p className="">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Doloremque nam debitis officia. Architecto eos quae ad
+                accusantium debitis officia magnam cumque nobis suscipit fuga
+                recusandae, vel fugiat voluptatum illo deserunt.
+              </p>
+            </div>
+            <div className="section-2-grids">
+              {data.map((item, index) => (
+                <div key={index} className="space-y-3">
+                  <img src={item.image} alt="" className="image" />
+                  <a href="#" className="title">
+                    {item.title}
+                  </a>
+                  <p className="">{item.description}</p>
+                  <button className="button-4 group">
+                    <span className=" group-hover:text-black">voir plus</span>
+                  </button>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -146,22 +185,11 @@ const GymPage = () => {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta,
             quo?
           </span>
-          <button
-            style={{
-              padding: "20px",
-            }}
-            className=" button-2"
-          >
-            voir plus
-          </button>
+          <button className="p-5 button-2">voir plus</button>
         </div>
         <div className="classes-grid">
           <div className="space-y-5">
-            <div
-              style={{
-                marginBottom: "12px",
-              }}
-            >
+            <div className="mb-3">
               <img
                 src="/images/pexels-photo-917653.jpeg"
                 alt=""
@@ -175,14 +203,12 @@ const GymPage = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ad
               mollitia. Ad facere ipsam rerum?
             </p>
-            <button className="button-2">voir plus</button>
+            <button className="button-4 group">
+              <span className=" group-hover:text-black">voir plus</span>
+            </button>
           </div>
           <div className="space-y-5">
-            <div
-              style={{
-                marginBottom: "12px",
-              }}
-            >
+            <div className="mb-3">
               <img
                 src="/images/pexels-photo-4804257.jpeg"
                 alt=""
@@ -196,15 +222,13 @@ const GymPage = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ad
               mollitia. Ad facere ipsam rerum?
             </p>
-            <button className="button-2">voir plus</button>
+            <button className="button-4 group">
+              <span className=" group-hover:text-black">voir plus</span>
+            </button>
           </div>
 
           <div className="space-y-5">
-            <div
-              style={{
-                marginBottom: "12px",
-              }}
-            >
+            <div className="mb-3">
               <img
                 src="/images/pexels-photo-9288101.jpeg"
                 alt=""
@@ -215,21 +239,22 @@ const GymPage = () => {
               stretching
             </a>
             <p className="">
-              {" "}
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ad
               mollitia. Ad facere ipsam rerum?
             </p>
-            <button className="button-2">voir plus</button>
+            <button className="button-4 group">
+              <span className=" group-hover:text-black">voir plus</span>
+            </button>
           </div>
         </div>
       </section>
 
-      <section className="relative h-[1100px]  bg-black ">
-        <div className="h-full leading-none py-52">
-          <h1 className="font-extrabold text-gray-600 uppercase opacity-20 text-[250px]">
+      <section className="relative h-[1100px] overflow-hidden bg-black ">
+        <div className="h-full leading-none ">
+          <h1 className="font-extrabold text-gray-600 uppercase opacity-20 text-[290px]">
             rejoignez
           </h1>
-          <h1 className="font-extrabold text-gray-600 uppercase opacity-20 text-[250px]">
+          <h1 className="font-extrabold text-gray-600 uppercase opacity-20 text-[290px]">
             nous
           </h1>
         </div>
@@ -267,7 +292,7 @@ const GymPage = () => {
                     consequatur molestias?
                   </p>
                 </div>
-                <div className="flex items-center justify-center w-40 h-10 p-4 text-xs font-bold uppercase bg-gradient-to-r from-green-500 to-lime-400 transforme -rotate-12">
+                <div className="flex items-center justify-center w-40 h-10 p-4 text-xs font-bold uppercase bg-gradient-to-r from-green-500 via-lime-300 to-lime-400 transforme -rotate-12">
                   la plus populaire
                 </div>
                 <h1 className="">169€</h1>
@@ -297,10 +322,7 @@ const GymPage = () => {
 
       {/* section info */}
 
-      <section
-        style={{ padding: "80px", backgroundColor: "rgb(243 244 246)" }}
-        // className="p-20 bg-gray-100"
-      >
+      <section className="p-20 bg-gray-100">
         <div className="info-session">
           <div className="space-y-3 info-item ">
             <svg
@@ -398,6 +420,33 @@ const GymPage = () => {
             <p>45100, Orléans</p>
           </div>
         </div>
+        <style>{`
+          .scroller {
+            animation: 20s scroll infinite linear;
+          }
+      
+.scroller2 {
+animation: 20s scroll2 infinite linear;
+}
+          @keyframes scroll {
+            from {
+              margin-left: 0;
+            }
+            to {
+              margin-left: -100%;
+            }
+          }
+
+ @keyframes scroll2 {
+            from {
+              margin-left: 100%;
+            }
+            to {
+              margin-left: 0;
+            }
+          }
+
+        `}</style>
       </section>
       <footer className="footer">
         <div className="footer-grid">
