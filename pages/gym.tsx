@@ -130,37 +130,43 @@ const GymPage = () => {
           <div className="relative flex overflow-x-hidden">
             <div className="text-transparent py-28 animate-marquee whitespace-nowrap bg-clip-text bg-gradient-to-r from-blue-300 via-green-200 to-yellow-300">
               <span className="mx-4 font-extrabold uppercase text-7xl">
-                Marquee Item 1
+                boxe
               </span>
               <span className="mx-4 font-extrabold uppercase text-7xl">
-                Marquee Item 2
+                kunbalini
               </span>
               <span className="mx-4 font-extrabold uppercase text-7xl">
-                Marquee Item 3
+                barre
               </span>
               <span className="mx-4 font-extrabold uppercase text-7xl">
-                Marquee Item 4
+                coaching personnel
               </span>
               <span className="mx-4 font-extrabold uppercase text-7xl">
-                Marquee Item 5
+                yoga
+              </span>
+              <span className="mx-4 font-extrabold uppercase text-7xl">
+                cycle
               </span>
             </div>
 
             <div className="absolute top-0 text-transparent py-28 animate-marquee2 whitespace-nowrap bg-clip-text bg-gradient-to-r from-green-200 via-green-400 to-green-500">
               <span className="mx-4 font-extrabold uppercase text-7xl">
-                Marquee Item 1
+                boxe
               </span>
               <span className="mx-4 font-extrabold uppercase text-7xl">
-                Marquee Item 2
+                kunbalini
               </span>
               <span className="mx-4 font-extrabold uppercase text-7xl">
-                Marquee Item 3
+                barre
               </span>
               <span className="mx-4 font-extrabold uppercase text-7xl">
-                Marquee Item 4
+                coaching personnel
               </span>
               <span className="mx-4 font-extrabold uppercase text-7xl">
-                Marquee Item 5
+                yoga
+              </span>
+              <span className="mx-4 font-extrabold uppercase text-7xl">
+                cycle
               </span>
             </div>
           </div>
