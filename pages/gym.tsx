@@ -28,6 +28,27 @@ const data = [
   },
 ];
 
+const data2 = [
+  {
+    title: "yoga",
+    description:
+      "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ad mollitia. Ad facere ipsam rerum?",
+    image: "/images/pexels-photo-917653.jpeg",
+  },
+  {
+    title: "boxe",
+    description:
+      "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ad mollitia. Ad facere ipsam rerum?",
+    image: "/images/pexels-photo-4804257.jpeg",
+  },
+  {
+    title: "stretching",
+    description:
+      "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ad mollitia. Ad facere ipsam rerum?",
+    image: "/images/pexels-photo-9288101.jpeg",
+  },
+];
+
 const GymPage = () => {
   const settings = {
     // dots: true,
@@ -81,9 +102,7 @@ const GymPage = () => {
               </div>
             </nav>
             <div className="w-20">
-              <h1 className="leading-none section-title">
-                retrouver la forme avec nous
-              </h1>
+              <h1 className="leading-tight section-title">votre club de gym</h1>
             </div>
             <div className="flex items-center justify-between">
               <button className="p-6 button-2">accès cours gratuit</button>
@@ -175,7 +194,7 @@ const GymPage = () => {
           <div className="relative p-20 pt-0 section-2">
             <div className="w-1/3 space-y-5 ">
               <h1 className="w-40 leading-tight section-title">
-                votre club de gym
+                nos activités
               </h1>
               <p className="">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -218,64 +237,22 @@ const GymPage = () => {
           <button className="p-5 button-2">voir plus</button>
         </div>
         <div className="classes-grid">
-          <div className="space-y-5">
-            <div className="mb-3">
-              <img
-                src="/images/pexels-photo-917653.jpeg"
-                alt=""
-                className="image"
-              />
+          {data2.map((item, index) => (
+            <div key={index} className="space-y-5 ">
+              <div className="overflow-hidden ">
+                <img src={item.image} alt="" className="section-2-image" />
+              </div>
+              <div className="space-y-3">
+                <a href="#" className="title">
+                  {item.title}
+                </a>
+                <p className="">{item.description}</p>
+                <button className="button-4 group">
+                  <span className=" group-hover:text-black">voir plus</span>
+                </button>
+              </div>
             </div>
-            <a href="#" className="title ">
-              yoga
-            </a>
-            <p className="">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ad
-              mollitia. Ad facere ipsam rerum?
-            </p>
-            <button className="button-4 group">
-              <span className=" group-hover:text-black">voir plus</span>
-            </button>
-          </div>
-          <div className="space-y-5">
-            <div className="mb-3">
-              <img
-                src="/images/pexels-photo-4804257.jpeg"
-                alt=""
-                className="image"
-              />
-            </div>
-            <a href="#" className="title ">
-              boxe
-            </a>
-            <p className="">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ad
-              mollitia. Ad facere ipsam rerum?
-            </p>
-            <button className="button-4 group">
-              <span className=" group-hover:text-black">voir plus</span>
-            </button>
-          </div>
-
-          <div className="space-y-5">
-            <div className="mb-3">
-              <img
-                src="/images/pexels-photo-9288101.jpeg"
-                alt=""
-                className="image"
-              />
-            </div>
-            <a href="#" className="title ">
-              stretching
-            </a>
-            <p className="">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ad
-              mollitia. Ad facere ipsam rerum?
-            </p>
-            <button className="button-4 group">
-              <span className=" group-hover:text-black">voir plus</span>
-            </button>
-          </div>
+          ))}
         </div>
       </section>
 

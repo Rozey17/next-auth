@@ -21,6 +21,7 @@ module.exports = {
       animation: {
         marquee: "marquee 25s linear infinite",
         marquee2: "marquee2 25s linear infinite",
+        spin_slow: "spin 5s linear infinite",
       },
       keyframes: {
         marquee: {

@@ -67,7 +67,7 @@ a {
 }
 
 .section-2-image{
-  @apply object-cover object-center h-full w-full  transform hover:scale-105 transition duration-700 ease-in-out
+  @apply object-cover object-center h-full w-full transform hover:scale-105 transition duration-700 ease-in-out
 }
 
 .navbar-items{
