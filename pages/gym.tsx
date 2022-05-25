@@ -81,7 +81,9 @@ const GymPage = () => {
               </div>
             </nav>
             <div className="w-20">
-              <h1 className="section-title">retrouver la forme avec nous</h1>
+              <h1 className="leading-none section-title">
+                retrouver la forme avec nous
+              </h1>
             </div>
             <div className="flex items-center justify-between">
               <button className="p-6 button-2">accès cours gratuit</button>
@@ -182,17 +184,21 @@ const GymPage = () => {
                 recusandae, vel fugiat voluptatum illo deserunt.
               </p>
             </div>
-            <div className="section-2-grids">
+            <div className="section-2-grids ">
               {data.map((item, index) => (
-                <div key={index} className="space-y-3">
-                  <img src={item.image} alt="" className="image" />
-                  <a href="#" className="title">
-                    {item.title}
-                  </a>
-                  <p className="">{item.description}</p>
-                  <button className="button-4 group">
-                    <span className=" group-hover:text-black">voir plus</span>
-                  </button>
+                <div key={index} className="space-y-5 ">
+                  <div className="overflow-hidden h-[450px]">
+                    <img src={item.image} alt="" className=" section-2-image" />
+                  </div>
+                  <div className="space-y-3">
+                    <a href="#" className="title">
+                      {item.title}
+                    </a>
+                    <p className="">{item.description}</p>
+                    <button className="button-4 group">
+                      <span className=" group-hover:text-black">voir plus</span>
+                    </button>
+                  </div>
                 </div>
               ))}
             </div>
@@ -270,6 +276,17 @@ const GymPage = () => {
               <span className=" group-hover:text-black">voir plus</span>
             </button>
           </div>
+        </div>
+      </section>
+
+      <section className="bg-gray-100 ">
+        <div className="p-20 sessions">
+          <h1 className="text-gray-700 section-title">séances</h1>
+          <span className="">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta,
+            quo?
+          </span>
+          <button className="p-5 button-2">voir plus</button>
         </div>
       </section>
 
