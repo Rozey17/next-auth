@@ -18,34 +18,20 @@ module.exports = {
       // sans: ["Poppins", "sans-serif"],
     },
     extend: {
-      keyframes: {
-        scroll: {
-          "0%": {
-            marginLeft: "0%",
-          },
-          "100%": {
-            marginLeft: "-100%",
-          },
-        },
-        scroll2: {
-          "0%": {
-            marginLeft: "100%",
-          },
-          "100%": {
-            marginLeft: "0%",
-          },
-        },
-      },
       animation: {
-        scroller: "scroll 10s infinite linear",
+        marquee: "marquee 25s linear infinite",
+        marquee2: "marquee2 25s linear infinite",
       },
-
-      // animation: {
-      //   scroller2: "scroll2 10s infinite linear",
-      // },
-      // animation: {
-      //   "spin-slow": "spin 3s linear infinite",
-      // },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        marquee2: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
+      },
     },
   },
   plugins: [require("tailwindcss-ripple")()],

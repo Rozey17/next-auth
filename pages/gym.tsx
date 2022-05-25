@@ -114,7 +114,7 @@ const GymPage = () => {
       {/* section 'votre club de gym' */}
 
       <section className="relative text-white bg-black ">
-        <div className="w-[55%] leading-none pt-96">
+        <div className="w-[55%] leading-none pt-[650px]">
           <div className="text-[350px] font-extrabold text-gray-500 opacity-20 uppercase">
             én
           </div>
@@ -125,28 +125,46 @@ const GymPage = () => {
             gie
           </div>
         </div>
-        {/* <Slider {...settings}>
-          {[
-            "text-1",
-            "text-1",
-            "text-1",
-            "text-1",
-            "text-1",
-            "text-1",
-            "text-1",
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="py-5 font-extrabold uppercase text-7xl text-lime-300 whitespace-nowrap"
-            >
-              {item}
-            </div>
-          ))}
-        </Slider> */}
 
-        {/* </div> */}
         <div className="absolute inset-0">
-          <div className="relative p-20 section-2">
+          <div className="relative flex overflow-x-hidden">
+            <div className="text-transparent py-28 animate-marquee whitespace-nowrap bg-clip-text bg-gradient-to-r from-blue-300 via-green-200 to-yellow-300">
+              <span className="mx-4 font-extrabold uppercase text-7xl">
+                Marquee Item 1
+              </span>
+              <span className="mx-4 font-extrabold uppercase text-7xl">
+                Marquee Item 2
+              </span>
+              <span className="mx-4 font-extrabold uppercase text-7xl">
+                Marquee Item 3
+              </span>
+              <span className="mx-4 font-extrabold uppercase text-7xl">
+                Marquee Item 4
+              </span>
+              <span className="mx-4 font-extrabold uppercase text-7xl">
+                Marquee Item 5
+              </span>
+            </div>
+
+            <div className="absolute top-0 text-transparent py-28 animate-marquee2 whitespace-nowrap bg-clip-text bg-gradient-to-r from-green-200 via-green-400 to-green-500">
+              <span className="mx-4 font-extrabold uppercase text-7xl">
+                Marquee Item 1
+              </span>
+              <span className="mx-4 font-extrabold uppercase text-7xl">
+                Marquee Item 2
+              </span>
+              <span className="mx-4 font-extrabold uppercase text-7xl">
+                Marquee Item 3
+              </span>
+              <span className="mx-4 font-extrabold uppercase text-7xl">
+                Marquee Item 4
+              </span>
+              <span className="mx-4 font-extrabold uppercase text-7xl">
+                Marquee Item 5
+              </span>
+            </div>
+          </div>
+          <div className="relative p-20 pt-0 section-2">
             <div className="w-1/3 space-y-5 ">
               <h1 className="w-40 leading-tight section-title">
                 votre club de gym
@@ -263,7 +281,7 @@ const GymPage = () => {
             <h1 className="text-center section-title">
               choisissez votre offre
             </h1>
-            <div className="divide-y divide-gray-700">
+            <div className="divide-y divide-neutral-800">
               <div className="offer-item group">
                 <div className="offer-item-left ">
                   <a href="#" className="group-hover:text-[#e4ff5e] ">
@@ -420,34 +438,9 @@ const GymPage = () => {
             <p>45100, Orléans</p>
           </div>
         </div>
-        <style>{`
-          .scroller {
-            animation: 20s scroll infinite linear;
-          }
-      
-.scroller2 {
-animation: 20s scroll2 infinite linear;
-}
-          @keyframes scroll {
-            from {
-              margin-left: 0;
-            }
-            to {
-              margin-left: -100%;
-            }
-          }
-
- @keyframes scroll2 {
-            from {
-              margin-left: 100%;
-            }
-            to {
-              margin-left: 0;
-            }
-          }
-
-        `}</style>
       </section>
+
+      {/* footer */}
       <footer className="footer">
         <div className="footer-grid">
           <div className="space-y-5">
