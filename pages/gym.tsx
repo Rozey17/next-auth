@@ -128,7 +128,7 @@ const GymPage = () => {
 
         <div className="absolute inset-0">
           <div className="relative flex overflow-x-hidden">
-            <div className="text-transparent py-28 animate-marquee whitespace-nowrap bg-clip-text bg-gradient-to-r from-blue-300 via-green-200 to-yellow-300">
+            <div className="text-transparent py-28 animate-marquee whitespace-nowrap bg-clip-text bg-gradient-to-l from-green-500 via-lime-300 to-lime-400">
               <span className="mx-4 font-extrabold uppercase text-7xl">
                 boxe
               </span>
@@ -149,7 +149,7 @@ const GymPage = () => {
               </span>
             </div>
 
-            <div className="absolute top-0 text-transparent py-28 animate-marquee2 whitespace-nowrap bg-clip-text bg-gradient-to-r from-green-200 via-green-400 to-green-500">
+            <div className="absolute top-0 text-transparent py-28 animate-marquee2 whitespace-nowrap bg-clip-text bg-gradient-to-r from-green-500 via-lime-300 to-lime-400">
               <span className="mx-4 font-extrabold uppercase text-7xl">
                 boxe
               </span>
@@ -316,7 +316,7 @@ const GymPage = () => {
                     consequatur molestias?
                   </p>
                 </div>
-                <div className="flex items-center justify-center w-40 h-10 p-4 text-xs font-bold uppercase bg-gradient-to-r from-green-500 via-lime-300 to-lime-400 transforme -rotate-12">
+                <div className="flex items-center justify-center w-40 h-10 p-4 text-xs font-bold uppercase bg-gradient-to-r from-green-500 via-lime-300 to-lime-400 -rotate-12">
                   la plus populaire
                 </div>
                 <h1 className="">169€</h1>
