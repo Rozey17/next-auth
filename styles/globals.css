@@ -175,7 +175,7 @@ a {
 
 
 .hero{
-  @apply px-16 py-10 space-y-20
+  @apply px-14 py-5 space-y-20
 }
 .logo{
   @apply w-16 h-16 bg-white rounded-full overflow-hidden
