@@ -71,7 +71,7 @@ a {
 }
 
 .navbar-items{
-  @apply text-white text-xs font-bold hover:text-[#dae727] transition duration-300 ease-in uppercase
+  @apply text-white text-[13px] font-bold hover:text-[#dae727] transition duration-300 ease-in uppercase
   
 
 }

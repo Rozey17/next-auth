@@ -196,7 +196,7 @@ const GymPage = () => {
               <h1 className="w-40 leading-tight section-title">
                 nos activités
               </h1>
-              <p className="">
+              <p className="leading-7">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Doloremque nam debitis officia. Architecto eos quae ad
                 accusantium debitis officia magnam cumque nobis suscipit fuga
@@ -213,7 +213,7 @@ const GymPage = () => {
                     <a href="#" className="title">
                       {item.title}
                     </a>
-                    <p className="">{item.description}</p>
+                    <p className="text-[15px] leading-6">{item.description}</p>
                     <button className="button-4 group">
                       <span className=" group-hover:text-black">voir plus</span>
                     </button>
@@ -242,11 +242,11 @@ const GymPage = () => {
               <div className="overflow-hidden ">
                 <img src={item.image} alt="" className="section-2-image" />
               </div>
-              <div className="space-y-3">
+              <div className="space-y-3 ">
                 <a href="#" className="title">
                   {item.title}
                 </a>
-                <p className="">{item.description}</p>
+                <p className="text-[15px] leading-6">{item.description}</p>
                 <button className="button-4 group">
                   <span className=" group-hover:text-black">voir plus</span>
                 </button>
