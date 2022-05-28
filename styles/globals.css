@@ -204,6 +204,23 @@ a {
   @apply text-sm text-gray-200}
  
 
+.section{
+  @apply flex justify-center items-center min-h-screen bg-slate-700
+}
+
+.section ul {
+  @apply flex flex-col space-y-5
+}
+
+.section ul li {
+ @apply text-4xl font-bold uppercase hover:text-gray-400 text-white hover:transform hover:-translate-y-5 transition duration-300 before:pointer-events-none
+}
+
+.section ul li a{
+@apply  relative before:absolute before:-bottom-5 before:content-[attr(data-text)] before:z-10 before:text-[10px] before:tracking-[100px] hover:before:tracking-normal before:transition-all before:duration-[800ms] before:scale-0 before:hover:scale-100 before:text-teal-300  before:text-shadow-xl before:delay-100 
+
+}
+
 
 @tailwind base;
 @tailwind components;

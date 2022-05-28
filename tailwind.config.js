@@ -35,5 +35,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-ripple")()],
+  plugins: [require("tailwindcss-ripple"), require("tailwindcss-textshadow")],
 };
