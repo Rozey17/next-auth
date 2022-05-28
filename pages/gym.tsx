@@ -256,14 +256,186 @@ const GymPage = () => {
         </div>
       </section>
 
-      <section className="bg-gray-100 ">
+      <section className="pb-20 bg-gray-100">
         <div className="p-20 sessions">
-          <h1 className="text-gray-700 section-title">séances</h1>
+          <h1 className="text-gray-700 section-title">coaches</h1>
           <span className="">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta,
             quo?
           </span>
           <button className="p-5 button-2">voir plus</button>
+        </div>
+        <div className="relative flex overflow-x-hidden">
+          <div className="flex py-5 animate-mark whitespace-nowrap">
+            <span className="relative mx-4">
+              <img
+                src="/images/pexels-emmanuella-omonigho-8779307-modified.jpg"
+                alt=""
+                className="object-cover w-96 h-96"
+              />
+              <h1 className="absolute text-sm font-bold text-white uppercase bottom-5 right-5 text-shadow-lg">
+                tobira gbagbo
+              </h1>
+            </span>
+            <span className="relative mx-4">
+              <img
+                src="/images/pexels-italo-melo-2379004-modified.jpg"
+                alt=""
+                className="object-cover w-96 h-96"
+              />
+              <h1 className="absolute text-sm font-bold text-white uppercase bottom-5 right-5 text-shadow-lg">
+                amir khan
+              </h1>
+            </span>
+            <span className="relative mx-4">
+              <img
+                src="/images/pexels-nappy-935965-modified.jpg"
+                alt=""
+                className="object-cover w-96 h-96"
+              />
+              <h1 className="absolute text-sm font-bold text-white uppercase bottom-5 right-5 text-shadow-lg">
+                {`curtis 'bones' jones`}
+              </h1>
+            </span>
+            <span className="relative mx-4">
+              <img
+                src="/images/pexels-tima-miroshnichenko-6539044-modified.jpg"
+                alt=""
+                className="object-cover w-96 h-96"
+              />
+              <h1 className="absolute text-sm font-bold text-white uppercase bottom-5 right-5 text-shadow-lg">
+                jean page
+              </h1>
+            </span>
+          </div>
+          <div className="absolute top-0 flex py-5 animate-mark2 whitespace-nowrap">
+            <span className="relative mx-4">
+              <img
+                src="/images/pexels-emmanuella-omonigho-8779307-modified.jpg"
+                alt=""
+                className="object-cover w-96 h-96"
+              />
+              <h1 className="absolute text-sm font-bold text-white uppercase bottom-5 right-5 text-shadow-lg">
+                tobira gbagbo
+              </h1>
+            </span>
+            <span className="relative mx-4">
+              <img
+                src="/images/pexels-italo-melo-2379004-modified.jpg"
+                alt=""
+                className="object-cover w-96 h-96"
+              />
+              <h1 className="absolute text-sm font-bold text-white uppercase bottom-5 right-5 text-shadow-lg">
+                amir khan
+              </h1>
+            </span>
+            <span className="relative mx-4">
+              <img
+                src="/images/pexels-nappy-935965-modified.jpg"
+                alt=""
+                className="object-cover w-96 h-96"
+              />
+              <h1 className="absolute text-sm font-bold text-white uppercase bottom-5 right-5 text-shadow-lg">
+                {`curtis 'bones' jones`}
+              </h1>
+            </span>
+            <span className="relative mx-4">
+              <img
+                src="/images/pexels-tima-miroshnichenko-6539044-modified.jpg"
+                alt=""
+                className="object-cover w-96 h-96"
+              />
+              <h1 className="absolute text-sm font-bold text-white uppercase bottom-5 right-5 text-shadow-lg">
+                jean page
+              </h1>
+            </span>
+          </div>
+        </div>
+        <div className="relative flex overflow-x-hidden">
+          <div className="flex py-5 animate-mark whitespace-nowrap">
+            <span className="relative mx-4">
+              <img
+                src="/images/pexels-nappy-936075-modified.jpg"
+                alt=""
+                className="object-cover w-96 h-96"
+              />
+              <h1 className="absolute text-sm font-bold text-white uppercase bottom-5 right-5 text-shadow-lg">
+                michelle owens
+              </h1>
+            </span>
+            <span className="relative mx-4">
+              <img
+                src="/images/pexels-ketut-subiyanto-4804058-modified.jpg"
+                alt=""
+                className="object-cover w-96 h-96"
+              />
+              <h1 className="absolute text-sm font-bold text-white uppercase bottom-5 right-5 text-shadow-lg">
+                Roger Tock
+              </h1>
+            </span>
+            <span className="relative mx-4">
+              <img
+                src="/images/pexels-ron-lach-8744818.jpg"
+                alt=""
+                className="object-cover w-96 h-96"
+              />
+              <h1 className="absolute text-sm font-bold text-white uppercase bottom-5 right-5 text-shadow-lg">
+                kahina choukri
+              </h1>
+            </span>
+            <span className="relative mx-4">
+              <img
+                src="/images/pexels-pixabay-38630 (1)-modified.jpg"
+                alt=""
+                className="object-cover w-96 h-96"
+              />
+              <h1 className="absolute text-sm font-bold text-white uppercase bottom-5 right-5 text-shadow-lg">
+                steven brown
+              </h1>
+            </span>
+          </div>
+          <div className="absolute top-0 flex py-5 animate-mark2 whitespace-nowrap">
+            <span className="relative mx-4">
+              <img
+                src="/images/pexels-nappy-936075-modified.jpg"
+                alt=""
+                className="object-cover w-96 h-96"
+              />
+              <h1 className="absolute text-sm font-bold text-white uppercase bottom-5 right-5 text-shadow-lg">
+                michelle owens
+              </h1>
+            </span>
+            <span className="relative mx-4">
+              <img
+                src="/images/pexels-ketut-subiyanto-4804058-modified.jpg"
+                alt=""
+                className="object-cover w-96 h-96"
+              />
+              <h1 className="absolute text-sm font-bold text-white uppercase bottom-5 right-5 text-shadow-lg">
+                Roger Tock
+              </h1>
+            </span>
+            <span className="relative mx-4">
+              <img
+                src="/images/pexels-ron-lach-8744818.jpg"
+                alt=""
+                className="object-cover w-96 h-96"
+              />
+              <h1 className="absolute text-sm font-bold text-white uppercase bottom-5 right-5 text-shadow-lg">
+                kahina choukri
+              </h1>
+            </span>
+            <span className="relative mx-4">
+              <img
+                src="/images/pexels-pixabay-38630 (1)-modified.jpg"
+                alt=""
+                className="object-cover w-96 h-96"
+              />
+              <h1 className="absolute text-sm font-bold text-white uppercase bottom-5 right-5 text-shadow-lg">
+                steven brown
+              </h1>
+            </span>
+          </div>
         </div>
       </section>
 
