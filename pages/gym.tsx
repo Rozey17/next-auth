@@ -265,7 +265,7 @@ const GymPage = () => {
           </span>
           <button className="p-5 button-2">voir plus</button>
         </div>
-        <div className="relative flex overflow-x-hidden">
+        <div className="relative flex overflow-x-hidden ">
           <div className="flex py-5 animate-mark whitespace-nowrap">
             <span className="relative mx-4">
               <img
@@ -304,7 +304,7 @@ const GymPage = () => {
                 className="object-cover w-96 h-96"
               />
               <h1 className="absolute text-sm font-bold text-white uppercase bottom-5 right-5 text-shadow-lg">
-                jean page
+                julia page
               </h1>
             </span>
           </div>
@@ -346,7 +346,7 @@ const GymPage = () => {
                 className="object-cover w-96 h-96"
               />
               <h1 className="absolute text-sm font-bold text-white uppercase bottom-5 right-5 text-shadow-lg">
-                jean page
+                julia page
               </h1>
             </span>
           </div>
