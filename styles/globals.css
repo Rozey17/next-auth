@@ -217,7 +217,7 @@ a {
 }
 
 .section ul li a{
-@apply  relative before:absolute before:-bottom-5 before:content-[attr(data-text)] before:z-10 before:text-[10px] before:tracking-[100px] hover:before:tracking-normal before:transition-all before:duration-[800ms] before:scale-0 before:hover:scale-100 before:text-teal-300  before:text-shadow-xl before:delay-100 
+@apply  relative before:absolute before:-bottom-5 before:content-[attr(data-text)] before:z-10 before:text-xs before:tracking-[100px] hover:before:tracking-normal before:transition-all before:duration-[800ms] before:scale-0 before:hover:scale-100 before:text-teal-300  before:text-shadow-xl before:delay-100 
 
 }
 

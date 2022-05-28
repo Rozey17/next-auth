@@ -351,7 +351,7 @@ const GymPage = () => {
             </span>
           </div>
         </div>
-        <div className="relative flex overflow-x-hidden">
+        <div className="relative flex mr-20 overflow-x-hidden">
           <div className="flex py-5 animate-mark whitespace-nowrap">
             <span className="relative mx-4">
               <img
