@@ -212,7 +212,7 @@ const GymPage = () => {
                     <a href="#" className="title">
                       {item.title}
                     </a>
-                    <p className="text-[15px] leading-6">{item.description}</p>
+                    <p className="leading-6 ">{item.description}</p>
                     <button className="button-4 group">
                       <span className=" group-hover:text-black">voir plus</span>
                     </button>
