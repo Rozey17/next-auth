@@ -14,7 +14,8 @@ module.exports = {
     //   darken: 0.0,
     // }),
     fontFamily: {
-      sans: ["Roboto", ...defaultTheme.fontFamily.sans],
+      // sans: ["Open Sans", ...defaultTheme.fontFamily.sans],
+      sans: ["Oswald", ...defaultTheme.fontFamily.sans],
       // sans: ["Poppins", "sans-serif"],
     },
     extend: {

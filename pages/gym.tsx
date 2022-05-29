@@ -1,5 +1,4 @@
 import React from "react";
-import Slider from "react-slick";
 
 const data = [
   {
@@ -80,7 +79,7 @@ const GymPage = () => {
                 />
               </div>
               <div className="flex items-center space-x-5">
-                <ul className="flex items-center gap-5">
+                <ul className="flex items-center space-x-10">
                   {[
                     "cours",
                     "agenda",
