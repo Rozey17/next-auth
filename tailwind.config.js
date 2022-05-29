@@ -15,6 +15,7 @@ module.exports = {
     // }),
     fontFamily: {
       // sans: ["Open Sans", ...defaultTheme.fontFamily.sans],
+      jost: ["Jost", "sans-serif"],
       sans: ["Oswald", ...defaultTheme.fontFamily.sans],
       // sans: ["Poppins", "sans-serif"],
     },

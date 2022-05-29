@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+
+p{
+  @apply font-jost
+}
 * {
   box-sizing: border-box;
 }

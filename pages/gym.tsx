@@ -134,7 +134,7 @@ const GymPage = () => {
       {/* section 'votre club de gym' */}
 
       <section className="relative text-white bg-black ">
-        <div className="w-[55%] leading-none pt-[650px]">
+        <div className="w-[70%] leading-none pt-[650px] font-jost">
           <div className="text-[350px] font-extrabold text-gray-500 opacity-20 uppercase">
             én
           </div>
@@ -195,7 +195,7 @@ const GymPage = () => {
               <h1 className="w-40 leading-tight section-title">
                 nos activités
               </h1>
-              <p className="leading-7">
+              <p className="leading-7 font-jost">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Doloremque nam debitis officia. Architecto eos quae ad
                 accusantium debitis officia magnam cumque nobis suscipit fuga
@@ -229,10 +229,10 @@ const GymPage = () => {
       <section className="p-20 bg-black ">
         <div className="sessions ">
           <h1 className="section-title">séances</h1>
-          <span className="">
+          <p className="text-2xl text-gray-400">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta,
             quo?
-          </span>
+          </p>
           <button className="p-5 button-2">voir plus</button>
         </div>
         <div className="classes-grid">
@@ -245,7 +245,7 @@ const GymPage = () => {
                 <a href="#" className="title">
                   {item.title}
                 </a>
-                <p className="text-[15px] leading-6">{item.description}</p>
+                <p className="leading-6 ">{item.description}</p>
                 <button className="button-4 group">
                   <span className=" group-hover:text-black">voir plus</span>
                 </button>
