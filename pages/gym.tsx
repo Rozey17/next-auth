@@ -258,10 +258,10 @@ const GymPage = () => {
       <section className="pb-20 bg-gray-100">
         <div className="p-20 sessions">
           <h1 className="text-gray-700 section-title">coaches</h1>
-          <span className="">
+          <p className="text-2xl text-gray-400">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta,
             quo?
-          </span>
+          </p>
           <button className="p-5 button-2">voir plus</button>
         </div>
         <div className="relative flex overflow-x-hidden ">
@@ -439,11 +439,11 @@ const GymPage = () => {
       </section>
 
       <section className="relative h-[1100px] overflow-hidden bg-black ">
-        <div className="h-full leading-none ">
+        <div className="h-full leading-none text-center font-jost">
           <h1 className="font-extrabold text-gray-600 uppercase opacity-20 text-[290px]">
             rejoignez
           </h1>
-          <h1 className="font-extrabold text-gray-600 uppercase opacity-20 text-[290px]">
+          <h1 className="font-extrabold  text-gray-600 uppercase opacity-20 text-[290px]">
             nous
           </h1>
         </div>
