@@ -1,3 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
+import { Item } from "framer-motion/types/components/Reorder/Item";
+import Image from "next/image";
 import React from "react";
 
 const data = [
@@ -398,6 +401,25 @@ const data3 = [
         </g>
       </svg>,
     ],
+  },
+];
+
+const data4 = [
+  {
+    name: " tobira gbagbo",
+    image: "/images/pexels-emmanuella-omonigho-8779307-modified.jpg",
+  },
+  {
+    name: "amir khan",
+    image: "/images/pexels-italo-melo-2379004-modified.jpg",
+  },
+  {
+    name: "curtis 'bones' jones",
+    image: "/images/pexels-nappy-935965-modified.jpg",
+  },
+  {
+    name: " julia page",
+    image: "/images/pexels-tima-miroshnichenko-6539044-modified.jpg",
   },
 ];
 
@@ -892,10 +914,14 @@ const GymPage = () => {
           </div>
           <div className="flex px-5 space-x-5">
             <div className="w-2/5 cursor-pointer">
-              <img
+              <Image
+                height="100%"
+                width="100%"
+                layout="responsive"
+                objectFit="cover"
+                objectPosition="center"
                 src="/images/pexels-photo-4720570.jpeg"
                 alt=""
-                className="image"
               />
             </div>
             <div className="grid w-3/5 grid-cols-3 gap-5">
@@ -907,8 +933,16 @@ const GymPage = () => {
                 "/images/pexels-photo-4662336.jpeg",
                 "/images/pexels-photo-1886487.jpeg",
               ].map((item, index) => (
-                <div key={index} className="cursor-pointer h-60">
-                  <img src={item} alt="" className="image" />
+                <div key={index} className="cursor-pointer">
+                  <Image
+                    height="100%"
+                    width="100%"
+                    layout="responsive"
+                    objectFit="cover"
+                    objectPosition="center"
+                    src={item}
+                    alt=""
+                  />
                 </div>
               ))}
             </div>
@@ -1181,7 +1215,7 @@ const GymPage = () => {
             <div className="flex ">
               <input
                 type="text"
-                className="input"
+                className="input font-jost"
                 placeholder="entrer votre email"
               />
               <button className="button-3">inscription</button>
