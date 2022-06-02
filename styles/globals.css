@@ -20,7 +20,7 @@ p{
 }
 
 .input{
-  @apply flex items-center w-full h-full px-2 py-4 text-sm text-white capitalize bg-black border-2 border-r-0 border-white focus:outline-none
+  @apply flex items-center w-full h-full px-2 py-4 font-jost text-white capitalize bg-black border-2 border-r-0 border-white focus:outline-none
  
 }
 
@@ -28,22 +28,22 @@ p{
 /* Buttons */
 
 .button-1{
-  @apply border-2 border-[#dae727] text-[#dae727] hover:text-black font-bold px-4 py-2 justify-center transition duration-300 ease-in items-center text-xs uppercase bg-transparent hover:bg-[#dae727]   
+  @apply border-2 border-[#dae727] tracking-wider text-[#dae727] hover:text-black font-bold px-4 py-2 justify-center transition duration-300 ease-in items-center text-xs uppercase bg-transparent hover:bg-[#dae727]   
 }
 
 
 .button-2{
-  @apply border-2 border-[#dae727] hover:text-[#dae727] text-black font-bold px-4 py-2 justify-center  transition duration-300 ease-in items-center text-xs uppercase bg-[#dae727] hover:bg-black
+  @apply border-2 border-[#dae727] tracking-wider hover:text-[#dae727] text-black font-bold px-4 py-2 justify-center  transition duration-300 ease-in items-center text-xs uppercase bg-[#dae727] hover:bg-black
   
 }
 
 .button-3{
-  @apply text-[#dae727] font-bold hover:text-black hover:bg-[#dae727] text-sm uppercase p-3 transition duration-300 ease-in border-2 border-white focus:outline-none   hover:border-[#dae727]
+  @apply text-[#dae727] font-bold tracking-wider hover:text-black hover:bg-[#dae727] text-sm uppercase p-3 transition duration-300 ease-in border-2 border-white focus:outline-none   hover:border-[#dae727]
   
 }
 
 .button-4{
-  @apply relative text-sm font-bold uppercase   hover:text-black text-[#dae727] before:absolute before:bg-[#dae727] before:w-0 before:h-full before:top-0 before:left-0  transition before:duration-500 hover:before:w-full   
+  @apply relative text-sm font-bold uppercase  tracking-wider hover:text-black text-[#dae727] before:absolute before:bg-[#dae727] before:w-0 before:h-full before:top-0 before:left-0  transition before:duration-500 hover:before:w-full   
 }
 
 .button-4 span{
@@ -75,7 +75,7 @@ p{
 }
 
 .navbar-items{
-  @apply text-white text-[13px] font-bold hover:text-[#dae727] transition duration-300 ease-in uppercase
+  @apply text-white text-[13px] font-bold hover:text-[#dae727] transition duration-300 ease-in uppercase tracking-wider
   
 
 }
@@ -114,7 +114,7 @@ p{
 
 
 .playlist-button{
-  @apply flex items-center justify-center px-6 py-4 space-x-3 text-sm font-bold text-white uppercase hover:text-[#dae727] transition duration-300 ease-in bg-black rounded-full
+  @apply flex items-center justify-center px-6 py-4 space-x-3 tracking-wider text-sm font-bold text-white uppercase hover:text-[#dae727] transition duration-300 ease-in bg-black rounded-full
 
 }
 

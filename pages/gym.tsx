@@ -438,10 +438,13 @@ const GymPage = () => {
   return (
     <>
       <section className="relative h-screen bg-black">
-        <img
+        <Image
           src="/images/pexels-photo-841130.jpeg"
-          alt=""
-          className="image opacity-80"
+          layout="fill"
+          objectFit="cover"
+          className="opacity-80"
+          quality={100}
+          alt="gym"
         />
         <div className="absolute inset-0">
           <div className="hero">
@@ -1215,7 +1218,7 @@ const GymPage = () => {
             <div className="flex ">
               <input
                 type="text"
-                className="input font-jost"
+                className="input "
                 placeholder="entrer votre email"
               />
               <button className="button-3">inscription</button>
