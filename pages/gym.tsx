@@ -1178,7 +1178,7 @@ const GymPage = () => {
               </a>
             </div>
           </div>
-          <div className="">
+          <div className="tracking-wider">
             <ul className="space-y-3">
               <li className=" title">
                 <a href="#">cours</a>
@@ -1195,7 +1195,7 @@ const GymPage = () => {
               </li>
             </ul>
           </div>
-          <div className="">
+          <div className="tracking-wider">
             <ul className="space-y-3">
               <li className=" title">
                 <a href="#">entrainement personnel</a>
