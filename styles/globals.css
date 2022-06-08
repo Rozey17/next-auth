@@ -103,7 +103,7 @@ p{
 }
 
 .title{
-  @apply text-xl font-bold hover:text-[#dae727] uppercase duration-300 ease-in transition text-white
+  @apply text-xl font-bold hover:text-[#dae727] uppercase duration-300 ease-in transition text-white w-fit
  
 }
 
