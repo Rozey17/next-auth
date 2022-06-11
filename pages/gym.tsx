@@ -512,7 +512,7 @@ const GymPage = () => {
 
       {/* section 'votre club de gym' */}
 
-      <section className="relative text-white laptop:bg-black">
+      <section className=" relative h-[3000px] laptop:h-auto text-white laptop:bg-black">
         <div className="w-[70%] leading-none pt-[650px] font-jost hidden laptop:block">
           <div className="text-[350px] font-extrabold text-gray-500 opacity-20 uppercase">
             én
@@ -613,7 +613,7 @@ const GymPage = () => {
 
       {/* section séances */}
 
-      <section className="hidden p-20 bg-black">
+      <section className="px-5 py-20 space-y-10 bg-black laptop:p-20 laptop:space-y-0">
         <div className="sessions ">
           <h1 className="section-title">séances</h1>
           <p className="text-2xl text-gray-400">

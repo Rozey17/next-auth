@@ -82,7 +82,7 @@ p{
 
 
 .classes-grid {
-  @apply grid grid-cols-3 gap-10
+  @apply laptop:grid grid-cols-3 gap-10 space-y-10 laptop:space-y-0
 
 }
 
@@ -92,7 +92,7 @@ p{
 }
 
 .sessions {
-  @apply flex items-center justify-between text-white h-60
+  @apply flex items-center justify-between flex-col laptop:flex-row text-white h-60 text-center laptop:text-left
  
 }
 
