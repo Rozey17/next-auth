@@ -440,6 +440,7 @@ const GymPage = () => {
       <section className="relative h-screen bg-black">
         <Image
           src="/images/pexels-photo-841130.jpeg"
+          // src="https://images.pexels.com/photos/7689286/pexels-photo-7689286.jpeg"
           layout="fill"
           objectFit="cover"
           className="opacity-80"
@@ -456,7 +457,7 @@ const GymPage = () => {
                   className="image"
                 />
               </div>
-              <div className="flex items-center space-x-5">
+              <div className="items-center hidden space-x-5 laptop:flex">
                 <ul className="flex items-center space-x-10">
                   {[
                     "cours",
@@ -511,8 +512,8 @@ const GymPage = () => {
 
       {/* section 'votre club de gym' */}
 
-      <section className="relative text-white bg-black ">
-        <div className="w-[70%] leading-none pt-[650px] font-jost">
+      <section className="relative text-white laptop:bg-black">
+        <div className="w-[70%] leading-none pt-[650px] font-jost hidden laptop:block">
           <div className="text-[350px] font-extrabold text-gray-500 opacity-20 uppercase">
             én
           </div>
@@ -524,79 +525,87 @@ const GymPage = () => {
           </div>
         </div>
 
-        <div className="absolute inset-0">
-          <div className="relative flex overflow-x-hidden">
-            <div className="text-transparent py-28 animate-marquee whitespace-nowrap bg-clip-text bg-gradient-to-l from-green-500 via-lime-300 to-lime-400">
-              <span className="mx-4 font-extrabold uppercase text-7xl">
-                boxe
-              </span>
-              <span className="mx-4 font-extrabold uppercase text-7xl">
-                kunbalini
-              </span>
-              <span className="mx-4 font-extrabold uppercase text-7xl">
-                barre
-              </span>
-              <span className="mx-4 font-extrabold uppercase text-7xl">
-                coaching personnel
-              </span>
-              <span className="mx-4 font-extrabold uppercase text-7xl">
-                yoga
-              </span>
-              <span className="mx-4 font-extrabold uppercase text-7xl">
-                cycle
-              </span>
-            </div>
+        <div className="absolute inset-0 ">
+          <div className="bg-black">
+            <div className="relative flex overflow-x-hidden ">
+              <div className="text-transparent py-28 animate-marquee whitespace-nowrap bg-clip-text bg-gradient-to-l from-green-500 via-lime-300 to-lime-400">
+                <span className="mx-4 text-4xl font-extrabold uppercase laptop:text-7xl">
+                  boxe
+                </span>
+                <span className="mx-4 text-4xl font-extrabold uppercase laptop:text-7xl">
+                  kunbalini
+                </span>
+                <span className="mx-4 text-4xl font-extrabold uppercase laptop:text-7xl">
+                  barre
+                </span>
+                <span className="mx-4 text-4xl font-extrabold uppercase laptop:text-7xl">
+                  coaching personnel
+                </span>
+                <span className="mx-4 text-4xl font-extrabold uppercase laptop:text-7xl">
+                  yoga
+                </span>
+                <span className="mx-4 text-4xl font-extrabold uppercase laptop:text-7xl">
+                  cycle
+                </span>
+              </div>
 
-            <div className="absolute top-0 text-transparent py-28 animate-marquee2 whitespace-nowrap bg-clip-text bg-gradient-to-r from-green-500 via-lime-300 to-lime-400">
-              <span className="mx-4 font-extrabold uppercase text-7xl">
-                boxe
-              </span>
-              <span className="mx-4 font-extrabold uppercase text-7xl">
-                kunbalini
-              </span>
-              <span className="mx-4 font-extrabold uppercase text-7xl">
-                barre
-              </span>
-              <span className="mx-4 font-extrabold uppercase text-7xl">
-                coaching personnel
-              </span>
-              <span className="mx-4 font-extrabold uppercase text-7xl">
-                yoga
-              </span>
-              <span className="mx-4 font-extrabold uppercase text-7xl">
-                cycle
-              </span>
+              <div className="absolute top-0 text-transparent py-28 animate-marquee2 whitespace-nowrap bg-clip-text bg-gradient-to-r from-green-500 via-lime-300 to-lime-400">
+                <span className="mx-4 text-4xl font-extrabold uppercase laptop:text-7xl">
+                  boxe
+                </span>
+                <span className="mx-4 text-4xl font-extrabold uppercase laptop:text-7xl">
+                  kunbalini
+                </span>
+                <span className="mx-4 text-4xl font-extrabold uppercase laptop:text-7xl">
+                  barre
+                </span>
+                <span className="mx-4 text-4xl font-extrabold uppercase laptop:text-7xl">
+                  coaching personnel
+                </span>
+                <span className="mx-4 text-4xl font-extrabold uppercase laptop:text-7xl">
+                  yoga
+                </span>
+                <span className="mx-4 text-4xl font-extrabold uppercase laptop:text-7xl">
+                  cycle
+                </span>
+              </div>
             </div>
-          </div>
-          <div className="relative p-20 pt-0 section-2">
-            <div className="w-1/3 space-y-5 ">
-              <h1 className="w-40 leading-tight section-title">
-                nos activités
-              </h1>
-              <p className="leading-7 font-jost">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Doloremque nam debitis officia. Architecto eos quae ad
-                accusantium debitis officia magnam cumque nobis suscipit fuga
-                recusandae, vel fugiat voluptatum illo deserunt.
-              </p>
-            </div>
-            <div className="section-2-grids ">
-              {data.map((item, index) => (
-                <div key={index} className="space-y-5 ">
-                  <div className="overflow-hidden h-[450px]">
-                    <img src={item.image} alt="" className=" section-2-image" />
+            <div className="relative p-5 pt-0 laptop:p-20 section-2">
+              <div className="space-y-5 laptop:w-1/3 ">
+                <h1 className="w-40 leading-tight section-title whitespace-nowrap laptop:whitespace-normal">
+                  nos activités
+                </h1>
+                <p className="leading-7 font-jost">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Doloremque nam debitis officia. Architecto eos quae ad
+                  accusantium debitis officia magnam cumque nobis suscipit fuga
+                  recusandae, vel fugiat voluptatum illo deserunt.
+                </p>
+              </div>
+              <div className="section-2-grids ">
+                {data.map((item, index) => (
+                  <div key={index} className="space-y-5 ">
+                    <div className="overflow-hidden h-[450px]">
+                      <img
+                        src={item.image}
+                        alt=""
+                        className=" section-2-image"
+                      />
+                    </div>
+                    <div className="space-y-3">
+                      <a href="#" className="title">
+                        {item.title}
+                      </a>
+                      <p className="leading-6 ">{item.description}</p>
+                      <button className="button-4 group">
+                        <span className=" group-hover:text-black">
+                          voir plus
+                        </span>
+                      </button>
+                    </div>
                   </div>
-                  <div className="space-y-3">
-                    <a href="#" className="title">
-                      {item.title}
-                    </a>
-                    <p className="leading-6 ">{item.description}</p>
-                    <button className="button-4 group">
-                      <span className=" group-hover:text-black">voir plus</span>
-                    </button>
-                  </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -604,7 +613,7 @@ const GymPage = () => {
 
       {/* section séances */}
 
-      <section className="p-20 bg-black ">
+      <section className="hidden p-20 bg-black">
         <div className="sessions ">
           <h1 className="section-title">séances</h1>
           <p className="text-2xl text-gray-400">
@@ -633,7 +642,7 @@ const GymPage = () => {
         </div>
       </section>
 
-      <section className="pb-20 bg-gray-100">
+      <section className="hidden pb-20 bg-gray-100">
         <div className="p-20 sessions">
           <h1 className="text-gray-700 section-title">coaches</h1>
           <p className="text-2xl text-gray-400">
@@ -816,7 +825,7 @@ const GymPage = () => {
         </div>
       </section>
 
-      <section className="relative h-[1100px] overflow-hidden bg-black ">
+      <section className="hidden relative h-[1100px] overflow-hidden bg-black ">
         <div className="h-full leading-none text-center font-jost">
           <h1 className="font-extrabold text-gray-600 uppercase opacity-20 text-[290px]">
             rejoignez
@@ -887,7 +896,7 @@ const GymPage = () => {
         </div>
       </section>
 
-      <section className="p-32 bg-gray-100">
+      <section className="hidden p-32 bg-gray-100">
         <div className="grid grid-cols-3 gap-20">
           {data3.map((item, index) => (
             <div key={index} className="flex flex-col items-center space-y-5">
@@ -902,7 +911,7 @@ const GymPage = () => {
       </section>
 
       {/* social media section */}
-      <section className="relative h-[850px] overflow-hidden bg-black ">
+      <section className="hidden relative h-[850px] overflow-hidden bg-black ">
         <div className="h-full leading-none text-center font-jost">
           <h1 className="font-extrabold text-gray-600 uppercase opacity-20 text-[290px]">
             fitness
@@ -955,7 +964,7 @@ const GymPage = () => {
       </section>
       {/* section info */}
 
-      <section className="p-20 bg-gray-100">
+      <section className="hidden p-20 bg-gray-100">
         <div className="info-session">
           <div className="space-y-3 info-item ">
             <svg
@@ -1056,7 +1065,7 @@ const GymPage = () => {
       </section>
 
       {/* footer */}
-      <footer className="footer">
+      <footer className="hidden footer">
         <div className="footer-grid">
           <div className="space-y-5">
             <div className="logo">

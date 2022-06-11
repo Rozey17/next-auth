@@ -9,4 +9,12 @@ module.exports = {
     COGNITO_ISSUER: process.env.COGNITO_ISSUER,
     SECRET: process.env.SECRET,
   },
+  images: {
+    domains: [
+      "res.cloudinary.com",
+      "images.pexels.com",
+      "images4.alphacoders.com",
+      "images7.alphacoders.com",
+    ],
+  },
 };

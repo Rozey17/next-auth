@@ -28,22 +28,22 @@ p{
 /* Buttons */
 
 .button-1{
-  @apply border-2 border-[#dae727] tracking-wider text-[#dae727] hover:text-black font-bold px-4 py-2 justify-center transition duration-300 ease-in items-center text-xs uppercase bg-transparent hover:bg-[#dae727]   
+  @apply border-2 border-[#dae727] tracking-wide text-[#dae727] hover:text-black font-bold px-4 py-2 justify-center transition duration-300 ease-in items-center text-xs uppercase bg-transparent hover:bg-[#dae727]   
 }
 
 
 .button-2{
-  @apply border-2 border-[#dae727] tracking-wider hover:text-[#dae727] text-black font-bold px-4 py-2 justify-center  transition duration-300 ease-in items-center text-xs uppercase bg-[#dae727] hover:bg-black
+  @apply border-2 border-[#dae727] tracking-wide hover:text-[#dae727] text-black font-bold px-4 py-2 justify-center  transition duration-300 ease-in items-center text-xs uppercase bg-[#dae727] hover:bg-black
   
 }
 
 .button-3{
-  @apply text-[#dae727] font-bold tracking-wider hover:text-black hover:bg-[#dae727] text-sm uppercase p-3 transition duration-300 ease-in border-2 border-white focus:outline-none   hover:border-[#dae727]
+  @apply text-[#dae727] font-bold tracking-wide hover:text-black hover:bg-[#dae727] text-sm uppercase p-3 transition duration-300 ease-in border-2 border-white focus:outline-none   hover:border-[#dae727]
   
 }
 
 .button-4{
-  @apply relative text-sm font-bold uppercase  tracking-wider hover:text-black text-[#dae727] before:absolute before:bg-[#dae727] before:w-0 before:h-full before:top-0 before:left-0  transition before:duration-500 hover:before:w-full   
+  @apply relative text-sm font-bold uppercase  tracking-wide hover:text-black text-[#dae727] before:absolute before:bg-[#dae727] before:w-0 before:h-full before:top-0 before:left-0  transition before:duration-500 hover:before:w-full   
 }
 
 .button-4 span{
@@ -56,7 +56,7 @@ p{
 }
 
 .section-2{
-  @apply flex space-x-10
+  @apply laptop:flex laptop:space-x-10 space-y-10 laptop:space-y-0
  
 }
 
@@ -66,7 +66,7 @@ p{
 }
 
 .section-2-grids{
-  @apply grid w-2/3 grid-cols-2 gap-10 
+  @apply laptop:grid laptop:w-2/3 laptop:grid-cols-2 laptop:gap-10 space-y-10 laptop:space-y-0
   
 }
 
@@ -75,7 +75,7 @@ p{
 }
 
 .navbar-items{
-  @apply text-white text-[13px] font-bold hover:text-[#dae727] transition duration-300 ease-in uppercase tracking-wider
+  @apply text-white text-[13px] font-bold hover:text-[#dae727] transition duration-300 ease-in uppercase tracking-wide
   
 
 }
@@ -114,12 +114,12 @@ p{
 
 
 .playlist-button{
-  @apply flex items-center justify-center px-6 py-4 space-x-3 tracking-wider text-sm font-bold text-white uppercase hover:text-[#dae727] transition duration-300 ease-in bg-black rounded-full
+  @apply flex items-center justify-center px-6 py-4 space-x-3 tracking-wide text-sm font-bold text-white uppercase hover:text-[#dae727] transition duration-300 ease-in bg-black rounded-full
 
 }
 
 .section-title{
-  @apply font-extrabold text-white uppercase text-7xl
+  @apply font-extrabold text-white uppercase laptop:text-7xl text-5xl 
  
 }
 
