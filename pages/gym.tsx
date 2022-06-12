@@ -437,7 +437,7 @@ const GymPage = () => {
   };
   return (
     <>
-      <section className="relative h-screen bg-black">
+      <section className="relative laptop:h-screen h-[650px] bg-black">
         <Image
           src="/images/pexels-photo-841130.jpeg"
           // src="https://images.pexels.com/photos/7689286/pexels-photo-7689286.jpeg"
