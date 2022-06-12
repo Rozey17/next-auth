@@ -971,7 +971,7 @@ const GymPage = () => {
 
       {/* section info */}
 
-      <section className="px-5 py-20 laptop:px-20 laptop:py-40 bg-gray-100">
+      <section className="px-5  laptop:px-20 py-36 bg-gray-100">
         <div className="info-session">
           <div className=" info-item ">
             <svg
