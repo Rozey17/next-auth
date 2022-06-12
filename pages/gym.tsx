@@ -642,7 +642,9 @@ const GymPage = () => {
         </div>
       </section>
 
-      <section className="hidden pb-20 bg-gray-100">
+      {/*  coaches section */}
+
+      <section className=" pb-20 bg-gray-100">
         <div className="p-20 sessions">
           <h1 className="text-gray-700 section-title">coaches</h1>
           <p className="text-2xl text-gray-400">
@@ -825,8 +827,10 @@ const GymPage = () => {
         </div>
       </section>
 
-      <section className="hidden relative h-[1100px] overflow-hidden bg-black ">
-        <div className="h-full leading-none text-center font-jost">
+      {/*  offers section */}
+
+      <section className=" relative laptop:h-[1100px] h-[1600px] overflow-hidden bg-black ">
+        <div className=" h-full leading-none text-center font-jost">
           <h1 className="font-extrabold text-gray-600 uppercase opacity-20 text-[290px]">
             rejoignez
           </h1>
@@ -835,8 +839,8 @@ const GymPage = () => {
           </h1>
         </div>
         <div className="absolute inset-0">
-          <div className="relative min-h-screen p-20 space-y-20 ">
-            <h1 className="text-center section-title">
+          <div className="relative  laptop:p-20 px-5 py-10 space-y-20 ">
+            <h1 className="text-center section-title ">
               choisissez votre offre
             </h1>
             <div className="divide-y divide-neutral-800">
@@ -896,8 +900,10 @@ const GymPage = () => {
         </div>
       </section>
 
-      <section className="hidden p-32 bg-gray-100">
-        <div className="grid grid-cols-3 gap-20">
+      {/* activities section */}
+
+      <section className=" laptop:p-32 px-5 py-20 bg-gray-100">
+        <div className="laptop:grid grid-cols-3 gap-20 space-y-10 laptop:space-y-0">
           {data3.map((item, index) => (
             <div key={index} className="flex flex-col items-center space-y-5">
               {item.icon}
@@ -911,60 +917,60 @@ const GymPage = () => {
       </section>
 
       {/* social media section */}
-      <section className="hidden relative h-[850px] overflow-hidden bg-black ">
+      <section className=" relative laptop:h-[1100px] h-[700px]  overflow-hidden bg-black ">
         <div className="h-full leading-none text-center font-jost">
           <h1 className="font-extrabold text-gray-600 uppercase opacity-20 text-[290px]">
             fitness
           </h1>
         </div>
         <div className="absolute inset-0">
-          {/* <div className="relative min-h-screen p-20 space-y-20 "> */}
-          <div className="p-20 sessions">
-            <h1 className="text-white section-title">instagram</h1>
-            <p className="text-2xl text-gray-400">#bettereveryday</p>
-            <button className="p-5 button-2">follow us @GYMORLEANS</button>
-          </div>
-          <div className="flex px-5 space-x-5">
-            <div className="w-2/5 cursor-pointer">
-              <Image
-                height="100%"
-                width="100%"
-                layout="responsive"
-                objectFit="cover"
-                objectPosition="center"
-                src="/images/pexels-photo-4720570.jpeg"
-                alt=""
-              />
+          <div className="relative py-10 ">
+            <div className="p-20 sessions space-y-5 laptop:space-y-0 mb-20">
+              <h1 className="text-white section-title">instagram</h1>
+              <p className="text-2xl text-gray-400">#bettereveryday</p>
+              <button className="p-5 button-2">follow us @GYMORLEANS</button>
             </div>
-            <div className="grid w-3/5 grid-cols-3 gap-5">
-              {[
-                "/images/pexels-photo-3931076.jpeg",
-                "/images/pexels-photo-136405.jpeg",
-                "/images/pexels-photo-3912951.jpeg",
-                "/images/pexels-photo-6389078.jpeg",
-                "/images/pexels-photo-4662336.jpeg",
-                "/images/pexels-photo-1886487.jpeg",
-              ].map((item, index) => (
-                <div key={index} className="cursor-pointer">
-                  <Image
-                    height="100%"
-                    width="100%"
-                    layout="responsive"
-                    objectFit="cover"
-                    objectPosition="center"
-                    src={item}
-                    alt=""
-                  />
-                </div>
-              ))}
+            <div className="flex px-5 laptop:space-x-5 space-x-3">
+              <div className="laptop:w-2/5 w-3/5 cursor-pointer">
+                <Image
+                  height="100%"
+                  width="100%"
+                  layout="responsive"
+                  objectFit="cover"
+                  objectPosition="center"
+                  src="/images/pexels-photo-4720570.jpeg"
+                  alt=""
+                />
+              </div>
+              <div className="grid laptop:w-3/5 w-2/5 grid-cols-2  laptop:grid-cols-3 laptop:gap-5 gap-3">
+                {[
+                  "/images/pexels-photo-3931076.jpeg",
+                  "/images/pexels-photo-136405.jpeg",
+                  "/images/pexels-photo-3912951.jpeg",
+                  "/images/pexels-photo-6389078.jpeg",
+                  "/images/pexels-photo-4662336.jpeg",
+                  "/images/pexels-photo-1886487.jpeg",
+                ].map((item, index) => (
+                  <div key={index} className="cursor-pointer">
+                    <Image
+                      height="100%"
+                      width="100%"
+                      layout="responsive"
+                      objectFit="cover"
+                      objectPosition="center"
+                      src={item}
+                      alt=""
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-          {/* </div> */}
         </div>
       </section>
       {/* section info */}
 
-      <section className="hidden p-20 bg-gray-100">
+      <section className="px-5 py-20 laptop:p-20 bg-gray-100">
         <div className="info-session">
           <div className="space-y-3 info-item ">
             <svg
@@ -1065,7 +1071,7 @@ const GymPage = () => {
       </section>
 
       {/* footer */}
-      <footer className="hidden footer">
+      <footer className=" footer">
         <div className="footer-grid">
           <div className="space-y-5">
             <div className="logo">

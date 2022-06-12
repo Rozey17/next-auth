@@ -119,19 +119,19 @@ p{
 }
 
 .section-title{
-  @apply font-extrabold text-white uppercase laptop:text-7xl text-5xl 
+  @apply font-extrabold text-white uppercase laptop:text-7xl text-5xl leading-snug laptop:leading-normal
  
 }
 
 
 .info-session{
-  @apply flex justify-between w-2/3 mx-auto align-top
+  @apply flex laptop:flex-row flex-col items-center justify-between laptop:w-2/3 laptop:mx-auto align-top space-y-10 laptop:space-y-0
 
 
 }
 
 .info-item{
-  @apply flex flex-col items-center space-y-3 
+  @apply flex flex-col items-center space-y-3 text-center
   
 }
 
@@ -146,7 +146,7 @@ p{
 }
 
 .offer-item{
-  @apply flex items-center justify-between py-10 transition duration-300 ease-in hover:bg-neutral-800 
+  @apply laptop:flex items-center justify-between space-y-10 laptop:space-y-0 py-10 transition duration-300 ease-in hover:bg-neutral-800 
 }
 
 
@@ -167,7 +167,7 @@ p{
 
 }
 .offer-item-left{
-  @apply w-1/2 space-y-3
+  @apply laptop:w-1/2 space-y-3
 }
 
 .social-media-icons{
@@ -194,13 +194,13 @@ p{
 }
 
 .footer{
-  @apply px-10 py-20 bg-black
+  @apply laptop:px-10 px-5 py-20 bg-black
   
 
 }
 
 .footer-grid{
-  @apply grid items-center justify-between grid-cols-4
+  @apply laptop:grid items-center justify-between grid-cols-4  space-y-10 laptop:space-y-0
   
 }
 
