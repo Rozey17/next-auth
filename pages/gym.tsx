@@ -968,18 +968,18 @@ const GymPage = () => {
           </div>
         </div>
       </section>
+
       {/* section info */}
 
-      <section className="px-5 py-20 laptop:p-20 bg-gray-100">
+      <section className="px-5 py-20 laptop:px-20 laptop:py-40 bg-gray-100">
         <div className="info-session">
-          <div className="space-y-3 info-item ">
+          <div className=" info-item ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
               viewBox="0 0 577.565 577.565"
-              //   className="h-10 "
+              className="h-16 fill-gray-500"
               xmlSpace="preserve"
-              style={{ height: "40px" }}
             >
               <g>
                 <path
@@ -994,17 +994,19 @@ const GymPage = () => {
               </g>
             </svg>
             <h1 className="">contact</h1>
-            <p>Tel: 0102040560</p>
-            <p>email@email.com</p>
+
+            <span className="">
+              <p>Tel: 0102040560</p>
+              <p>email@email.com</p>
+            </span>
           </div>
-          <div className="space-y-3 info-item ">
+          <div className="info-item ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
               viewBox="0 0 488 488"
               xmlSpace="preserve"
-              //   className="h-10"
-              style={{ height: "40px" }}
+              className="h-16 fill-gray-500"
             >
               <g transform="translate(0 -540.36)">
                 <g>
@@ -1025,20 +1027,19 @@ const GymPage = () => {
               </g>
             </svg>
             <h1 className="">Horaires</h1>
-            <span className="space-y-2">
+            <span className="">
               <p>Lundi à vendredi: 7:30 — 1:00</p>
               <p>Samedi: 9:00 — 1:00</p>
               <p>Dimanche: 9:00 — 23:30</p>
             </span>
           </div>
-          <div className="space-y-3 info-item ">
+          <div className=" info-item ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
               viewBox="0 0 315 315"
               xmlSpace="preserve"
-              //   className="h-10"
-              style={{ height: "40px" }}
+              className="h-16 fill-gray-500"
             >
               <g>
                 <g>
@@ -1064,8 +1065,11 @@ const GymPage = () => {
               </g>
             </svg>
             <h1 className="">adresse</h1>
-            <p>10 rue Henry René</p>
-            <p>45100, Orléans</p>
+
+            <span className="">
+              <p>10 rue Henry René</p>
+              <p>45100, Orléans</p>
+            </span>
           </div>
         </div>
       </section>

@@ -125,18 +125,18 @@ p{
 
 
 .info-session{
-  @apply flex laptop:flex-row flex-col items-center justify-between laptop:w-2/3 laptop:mx-auto align-top space-y-10 laptop:space-y-0
+  @apply flex laptop:flex-row flex-col items-center laptop:items-start justify-between laptop:w-3/4 laptop:mx-auto  space-y-10 laptop:space-y-0
 
 
 }
 
 .info-item{
-  @apply flex flex-col items-center space-y-3 text-center
+  @apply flex flex-col items-center space-y-6 text-center
   
 }
 
 .info-item h1{
-  @apply text-2xl font-bold text-gray-700 uppercase
+  @apply text-2xl font-bold  uppercase
    
 }
 
